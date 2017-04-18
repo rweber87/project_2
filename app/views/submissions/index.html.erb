@@ -1,0 +1,10 @@
+<h1>Submissions</h1>
+
+<ul>
+	<%= @submissions.each do |submission| %>
+		<%= "*" * 100 %>
+		<li>Score: <%= submission.score %></li>
+		<li><%= link_to submission.title, submission_path(submission) %></li>
+		<li><%= submission.description %></li>
+	<% end %>
+</ul>
