@@ -1,21 +1,12 @@
 Rails.application.routes.draw do
-  get 'users/index'
+  get '/', to: 'static_pages#home', as: :root
 
-  get 'users/show'
+  resources :users, except: [:create, :new]
+  get '/signup', to: 'users#new', as: :signup
+  post '/users', to: 'users#create', as: :create_user
 
-  get 'users/new'
-
-  get 'users/edit'
-
-  get 'users/create'
-
-  get 'users/update'
-
-  get 'users/destroy'
-
-  get 'users/set_user'
-
-  get 'users/user_params'
-
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+  get '/login', to: 'sessions#new', as: :login
+  post '/login', to: 'sessions#create'
+  # delete '/sessions', to: 'sessions#destroy'
+  delete '/sessions', to: 'sessions#destroy', as: :logout
 end

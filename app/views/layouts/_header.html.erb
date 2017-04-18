@@ -1,0 +1,32 @@
+<h3>------- header -------</h3>
+<header>
+  <div>
+    <%= link_to full_title(), root_path %>
+    <nav>
+      <ul>
+        <% if logged_in? %>
+          <li><b>Dogmas</b></li>
+            <ul>
+              <li><%= link_to "All Dogmas", root_path %></li>
+              <li><%= link_to "New Dogmas", root_path %></li>
+            </ul>
+          </li>
+          <br>
+          <li><strong><%= current_user.username.split.map(&:capitalize).join(' ') %></strong></li>
+            <ul>
+              <li><%= link_to "Profile", current_user %></li>
+              <li><%= link_to "Edit Profile", edit_user_path(current_user) %></li>
+              <li><%= link_to "All Users", users_path %></li>
+              <li>
+                <!-- <%= link_to( "Log out", {controller: "sessions", action: "destroy" })%> -->
+                <%= button_to "Log out", logout_path, :method => :delete %>
+              </li>
+            </ul>
+          </li>
+        <% else %>
+          <li><%= link_to "Log in", login_path %></li>
+        <% end %>
+      </ul>
+    </nav>
+  </div>
+</header>
