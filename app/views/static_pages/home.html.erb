@@ -1,5 +1,11 @@
 <div class="container">
-  <h1 class="center">The only news you can trust</h1>
+  <h2 class="center">The only news you can trust</h2>
+
+  <% if flash[:success] %>
+    <div class="">
+       <h3 style="color: green"><%= flash[:success] %></h3>
+    </div>
+  <% end %>
 
   <%= @submissions.map do |submission| %>
   <div class="row">

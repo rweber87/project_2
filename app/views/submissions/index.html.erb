@@ -1,17 +1,16 @@
 <h1>Submissions</h1>
 
-
-	<%= @submissions.map do |submission| %>
-<div class="row">
-	<div class="col s2">
-			<%= image_tag 'http://images2.onionstatic.com/onion/5689/1/16x9/565.jpg', size: "200", :class => "responsive-img" %>
+<%= @submissions.map do |submission| %>
+	<div class="row">
+		<div class="col s2">
+				<%= image_tag 'http://images2.onionstatic.com/onion/5689/1/16x9/565.jpg', size: "200", :class => "responsive-img" %>
+			</div>
+		<div class="col s10">
+			<ul>
+				<li>Score: <%= submission.score %></li>
+				<li><span class="flow-text"><%= link_to submission.title, submission_path(submission) %></span></li>
+				<li><span class="flow-text"><%= submission.description %></span></li>
+			</ul>
 		</div>
-	<div class="col s10">
-		<ul>
-			<li>Score: <%= submission.score %></li>
-			<li><span class="flow-text"><%= link_to submission.title, submission_path(submission) %></span></li>
-			<li><span class="flow-text"><%= submission.description %></span></li>
-		</ul>
 	</div>
-</div>
-	<% end %>
+<% end %>

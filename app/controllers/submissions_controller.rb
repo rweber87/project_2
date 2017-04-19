@@ -37,7 +37,7 @@ class SubmissionsController < ApplicationController
 
 	def destroy
 		Submission.find(params[:id]).destroy
-		flash[:success] = "Post deleted."
+		flash[:success] = "POST DELETED...How could you?"
 		redirect_to root_path
 	end
 

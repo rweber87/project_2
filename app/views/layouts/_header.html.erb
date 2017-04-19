@@ -15,7 +15,7 @@
               <li><%= button_to "Log out", signout_path, :class => 'btn waves-effect waves-light', :method => :delete %></li>
             </ul>
         <% else %>
-          <li><%= link_to "Log in", login_path %></li>
+          <li><%= button_to "Log in", login_path, :class => 'btn waves-effect waves-light' %></li>
         <% end %>
       </ul>
     </nav>
