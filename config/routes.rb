@@ -25,6 +25,4 @@ Rails.application.routes.draw do
   get '/submissions/:id', to: 'submissions#show', as: 'submission'
   get '/submissions/:id/edit', to: 'submissions#edit', as: 'edit_submission'
   patch '/submissions/:id', to: 'submissions#update'
-
-
 end
