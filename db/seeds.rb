@@ -8,8 +8,10 @@
 
 require 'rss'
 require 'open-uri'
+require 'rubygems'
+require 'sanitize'
 
-	  
+
 	  urls = ['http://www.theonion.com/feeds/rss', 'http://nationalreport.net/feed/', 'http://duhprogressive.com/index.php/component/ninjarsssyndicator/?feed_id=1&format=raw', 'http://www.thespoof.com/rss/feeds/frontpage/rss.xml', 'http://www.newsbiscuit.com/feed/', 'http://21stcenturywire.com/feed/']
 	  rss_results = []
 
@@ -19,7 +21,6 @@ require 'open-uri'
 				if result.description.empty?
 					result.description = "Read me to discover what I'm all about...or not about about ;)"
 				end
-				result = Submission.create({ title: result.title, url: result.link, description: Sanitize.clean(result.description.slice(0..200)) })	
+				result = Submission.create({ title: result.title, url: result.link, description: Sanitize.clean(result.description.slice(0..200)) })
 			end
 		end
-
