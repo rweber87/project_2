@@ -1,5 +1,11 @@
 <h3>------- header -------</h3>
 <header>
+  <!--Import Google Icon Font-->
+  <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!--Import materialize.css-->
+  <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+  <!--Let browser know website is optimized for mobile-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <div>
     <%= link_to full_title(), root_path %>
     <nav>
@@ -19,7 +25,7 @@
               <li><%= link_to "All Users", users_path %></li>
               <li>
                 <!-- <%= link_to( "Log out", {controller: "sessions", action: "destroy" })%> -->
-                <%= button_to "Log out", logout_path, :method => :delete %>
+                <%= button_to "Log out", signout_path, :method => :delete %>
               </li>
             </ul>
           </li>

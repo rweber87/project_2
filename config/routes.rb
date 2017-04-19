@@ -7,6 +7,9 @@ Rails.application.routes.draw do
 
   get '/login', to: 'sessions#new', as: :login
   post '/login', to: 'sessions#create'
-  # delete '/sessions', to: 'sessions#destroy'
-  delete '/sessions', to: 'sessions#destroy', as: :logout
+  delete '/signout', to: 'sessions#destroy', as: :signout
+
+  match 'auth/:provider/callback', to: 'sessions#fb_create', via: [:get, :post]
+  match 'auth/failure', to: redirect('/'), via: [:get, :post]
+  # match 'signout', to: 'sessions#destroy', as: 'logout', via: [:get, :post]
 end

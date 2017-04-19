@@ -5,11 +5,15 @@
   <%= render 'layouts/shim' %>
 </head>
 <body>
+  <!--Import jQuery before materialize.js-->
+  <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script type="text/javascript" src="js/materialize.min.js"></script>
+
   <%= render 'layouts/header' %>
   <h3>------- body content -------</h3>
   <div class="container">
     <%= yield %>
-    <%= render 'layouts/footer' %>
+  <%= render 'layouts/footer' %>
   </div>
 </body>
 </html>

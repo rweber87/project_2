@@ -1,5 +1,14 @@
-<div>
-  <h1>The Best Most Real Fake News!</h1>
+<div class="container">
+  <h1 class="center">The Best Most Real Fake News!</h1>
 
-  <%= link_to "Sign up now!", signup_path %>
+  <div id="user-widget">
+    <% if current_user %>
+      Welcome <strong><%= current_user.name %></strong>!
+      <%= link_to "Sign out", signout_path, id: "sign_out" %>
+    <% else %>
+      <p><%= link_to "Sign in with Facebook", "/auth/facebook", id: "sign_in" %></p>
+      <p><%= link_to "Sign up now!", signup_path %></p>
+    <% end %>
+  </div>
+  
 </div>
