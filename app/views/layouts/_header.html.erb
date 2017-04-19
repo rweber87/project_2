@@ -1,18 +1,12 @@
-<h3>------- header -------</h3>
-<header>
-  <!--Import Google Icon Font-->
-  <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <!--Import materialize.css-->
-  <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
-  <!--Let browser know website is optimized for mobile-->
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <div>
-    <%= link_to full_title(), root_path %>
+<header class="navbar navbar-fixed-top navbar-inverse">
+  <div class="container">
+    <%= link_to full_title(), root_path, :class => "brand-logo" %>
     <nav>
-      <ul>
+      <ul class="nav navbar-nav navbar-right">
         <% if logged_in? %>
           <li><b>Dogmas</b></li>
-            <ul>
+          <a class="dropdown-button" class="dropdown-content">Drop me!</a>
+            <ul class="dropdown-menu">
               <li><%= link_to "All Dogmas", root_path %></li>
               <li><%= link_to "New Dogmas", root_path %></li>
             </ul>
@@ -23,6 +17,7 @@
               <li><%= link_to "Profile", current_user %></li>
               <li><%= link_to "Edit Profile", edit_user_path(current_user) %></li>
               <li><%= link_to "All Users", users_path %></li>
+              <li class="divider"></li>
               <li>
                 <!-- <%= link_to( "Log out", {controller: "sessions", action: "destroy" })%> -->
                 <%= button_to "Log out", signout_path, :method => :delete %>

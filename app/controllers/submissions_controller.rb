@@ -1,5 +1,13 @@
 class SubmissionsController < ApplicationController
+	before_filter :authorize, except: [:index, :show]
 
+	def index
+		@submissions = Submission.all.shuffle
+	end
+
+	def show
+		@submission = Submission.find(params[:id])
+	end
 
 	def new
 		@submission = Submission.new
@@ -7,7 +15,7 @@ class SubmissionsController < ApplicationController
 
 	def create
 		@submission = Submission.new(submission_params)
-		if @submission.save 
+		if @submission.save
 			redirect_to submission_path(@submission)
 		else
 			render 'new'
@@ -26,16 +34,6 @@ class SubmissionsController < ApplicationController
 			render 'edit'
 		end
 	end
-
-
-	def index
-		@submissions = Submission.all.shuffle
-	end
-
-	def show
-		@submission = Submission.find(params[:id])
-	end
-
 
 	private
 
