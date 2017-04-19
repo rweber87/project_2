@@ -1,0 +1,17 @@
+<h1>Edit Submission</h1>
+
+<ul>
+	<% @submission.errors.full_messages.each do |message| %>
+		<li><%= message %></li>
+	<% end %>
+</ul>
+
+<%= form_for @submission do |f| %>
+	<%= f.label :title %>:
+	<%= f.text_field :title %>
+	<%= f.label :url %>:
+	<%= f.text_field :url %>
+	<%= f.label :description %>:
+	<%= f.text_field :description %>
+	<%= f.submit %>
+<% end %>
