@@ -1,5 +1,5 @@
 class SubmissionsController < ApplicationController
-	before_filter :authorize, except: [:index, :show]
+	before_filter :authorize, except: [:index, :show, :destroy]
 
 	def index
 		@submissions = Submission.all.shuffle
@@ -33,6 +33,12 @@ class SubmissionsController < ApplicationController
 		else
 			render 'edit'
 		end
+	end
+
+	def destroy
+		Submission.find(params[:id]).destroy
+		flash[:success] = "Post deleted."
+		redirect_to root_path
 	end
 
 	private
