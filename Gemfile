@@ -26,6 +26,10 @@ gem 'redd'
 
 gem 'sanitize', '~> 4.4'
 
+gem "google_custom_search_api"
+
+gem 'metainspector'
+
 # gem 'feedjira'
 
 # gem 'image_suckr'

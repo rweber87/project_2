@@ -1,10 +1,10 @@
 
-<h1><%= link_to @submission.title, @submission.url, target: :_blank %></h1>
-<h4><%= @submission.description %></h4>
+<h2><%= link_to @submission.title, @submission.url, target: :_blank %></h1>
+<%= image_tag @submission.image, :class => "responsive-img" %>
+<h5><%= @submission.description %></h4>
 
 
 <%= link_to 'Edit', edit_submission_path  %>
 <% if logged_in? %>
   <%= link_to 'Delete', @submission, controller: 'submissions', action: 'destroy', method: 'delete' %>
 <% end %>
-  

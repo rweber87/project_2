@@ -1,34 +1,31 @@
-<div class="container">
-  <h2 class="center">The only news you can trust</h2>
+<h2 class="center">The only news you can trust</h2>
 
-  <% if flash[:success] %>
-    <div class="center">
-       <h3 style="color: green"><%= flash[:success] %></h3>
-    </div>
+<% if flash[:success] %>
+  <div class="center">
+     <h3 style="color: green"><%= flash[:success] %></h3>
+  </div>
+<% end %>
+
+<%= @submissions.map do |submission| %>
+<div class="row">
+	<div class="col s2" style="padding-top: 18px;">
+			<%= image_tag submission.image, :class => "responsive-img" %>
+		</div>
+	<div class="col s10">
+		<ul>
+			<li>Score: <%= submission.score %></li>
+			<li><span class="h6 flow-text"><%= link_to submission.title, submission_path(submission) %></span></li>
+			<li><span class="flow-text"><%= submission.description %></span></li>
+		</ul>
+	</div>
+</div>
+<% end %>
+
+<div id="user-widget">
+  <% if current_user %>
+    Welcome <strong><%= current_user.name %></strong>!
+    <%= link_to "Sign out", signout_path, id: "sign_out" %>
+  <% else %>
+    <p><%= link_to "Sign up now!", signup_path %></p>
   <% end %>
-
-  <%= @submissions.map do |submission| %>
-  <div class="row">
-  	<div class="col s2">
-  			<%= image_tag 'http://images2.onionstatic.com/onion/5689/1/16x9/565.jpg', size: "200", :class => "responsive-img" %>
-  		</div>
-  	<div class="col s10">
-  		<ul>
-  			<li>Score: <%= submission.score %></li>
-  			<li><span class="flow-text"><%= link_to submission.title, submission_path(submission) %></span></li>
-  			<li><span class="flow-text"><%= submission.description %></span></li>
-  		</ul>
-  	</div>
-  </div>
-	<% end %>
-
-  <div id="user-widget">
-    <% if current_user %>
-      Welcome <strong><%= current_user.name %></strong>!
-      <%= link_to "Sign out", signout_path, id: "sign_out" %>
-    <% else %>
-      <p><%= link_to "Sign up now!", signup_path %></p>
-    <% end %>
-  </div>
-
 </div>

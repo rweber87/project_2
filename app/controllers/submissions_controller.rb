@@ -1,5 +1,5 @@
 class SubmissionsController < ApplicationController
-	before_filter :authorize, except: [:index, :show, :destroy]
+	before_filter :authorize, except: [:index, :show, :create, :destroy]
 
 	def index
 		@submissions = Submission.all.shuffle
@@ -14,7 +14,11 @@ class SubmissionsController < ApplicationController
 	end
 
 	def create
+		page = MetaInspector.new(submission_params[:url])
+		img = page.images.best
 		@submission = Submission.new(submission_params)
+		@submission.image = img
+		@submission.user_id = session[:user_id]
 		if @submission.save
 			redirect_to submission_path(@submission)
 		else
@@ -44,7 +48,7 @@ class SubmissionsController < ApplicationController
 	private
 
 	def submission_params
-		params.require(:submission).permit(:title, :url, :description)
+		params.require(:submission).permit(:title, :url, :description, :user_id)
 	end
 
 

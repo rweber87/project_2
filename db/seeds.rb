@@ -13,7 +13,7 @@ require 'sanitize'
 
 
 
-urls = ['http://www.theonion.com/feeds/rss', 'http://nationalreport.net/feed/','http://duhprogressive.com/index.php/component/ninjarsssyndicator/?feed_id=1&format=raw','http://www.thespoof.com/rss/feeds/frontpage/rss.xml', 'http://www.newsbiscuit.com/feed/', 'http://21stcenturywire.com/feed/']
+urls = ['http://www.theonion.com/feeds/rss', 'http://nationalreport.net/feed/','http://www.thespoof.com/rss/feeds/frontpage/rss.xml', 'http://www.newsbiscuit.com/feed/', 'http://21stcenturywire.com/feed/']
 
 urls.each do |url|
 
@@ -22,14 +22,15 @@ urls.each do |url|
 		# if result.description.empty?
 		# 	result.description = "Read me to discover what I'm all about...or not about about ;)"
 		# end
-
-		doc = Nokogiri::HTML(result.description)
-
-			if result.description.include?('img')
-				img = doc.xpath("//img")[0]['src']
-			else
-				next
-			end
+		page = MetaInspector.new(result.link)
+		img = page.images.best
+		# doc = Nokogiri::HTML(result.description)
+		#
+		# 	if result.description.include?('img')
+		# 		img = doc.xpath("//img")[0]['src']
+		# 	else
+		# 		next
+		# 	end
 
 		result = Submission.create({ title: result.title, url: result.link, description: Sanitize.clean(result.description.slice(0..200)), image: img })
 	end
