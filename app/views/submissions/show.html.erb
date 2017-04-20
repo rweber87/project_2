@@ -3,8 +3,24 @@
 <%= image_tag @submission.image, :class => "responsive-img" %>
 <h5><%= @submission.description %></h4>
 
-
 <%= link_to 'Edit', edit_submission_path  %>
 <% if logged_in? %>
   <%= link_to 'Delete', @submission, controller: 'submissions', action: 'destroy', method: 'delete' %>
 <% end %>
+
+<h1>Create a comment</h1>
+<%= form_for @comment do |f| %>
+  <%= f.label :body %>:
+  <%= f.text_area(:body, size: '50x10') %>
+  <%= f.hidden_field :submission_id, value: @submission.id %>
+  <p><%= f.submit :class => 'btn waves-effect waves-light' %></p>
+  <br>
+<% end %>
+
+<h1>Comments</h1>
+<ol>
+<% @submission.comments.each do |comment| %>
+    <li><b><%= comment.user.username %></b><br> <%= comment.body %></li><br>
+
+<% end %>
+</ol>

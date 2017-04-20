@@ -2,6 +2,8 @@ Rails.application.routes.draw do
 
   resources :users, except: [:create, :new]
   resources :submissions
+  get '/submissions/:id/comments/new', to: 'comments#new'
+  post '/comments', to: 'comments#create', as: 'comments'
 
   get '/', to: 'static_pages#home', as: :root
   get '/signup', to: 'users#new', as: :signup

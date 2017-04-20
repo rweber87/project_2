@@ -1,0 +1,7 @@
+<h1>Create a comment</h1>
+<%= form_for comments_path do |f| %>
+	<%= f.label :body %>:
+	<%= f.text_area(:body, size: '50x10') %>
+	<p><%= f.submit :class => 'btn waves-effect waves-light' %></p>
+	<br>
+<% end %>

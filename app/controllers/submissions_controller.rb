@@ -7,6 +7,7 @@ class SubmissionsController < ApplicationController
 
 	def show
 		@submission = Submission.find(params[:id])
+		@comment = Comment.new
 	end
 
 	def new
