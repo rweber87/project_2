@@ -26,6 +26,12 @@ gem 'redd'
 
 gem 'sanitize', '~> 4.4'
 
+gem 'feedjira'
+
+gem 'image_suckr'
+
+gem 'scrapix'
+
 gem 'link_preview', '~> 0.3.5'
 
 gem 'omniauth'

@@ -3,7 +3,7 @@
 <%= @submissions.map do |submission| %>
 	<div class="row">
 		<div class="col s2">
-				<%= image_tag 'http://images2.onionstatic.com/onion/5689/1/16x9/565.jpg', size: "200", :class => "responsive-img" %>
+				<%= image_tag submission.image, size: "200", :class => "responsive-img" %>
 			</div>
 		<div class="col s10">
 			<ul>
