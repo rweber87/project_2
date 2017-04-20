@@ -17,7 +17,7 @@ urls = ['http://www.theonion.com/feeds/rss', 'http://nationalreport.net/feed/','
 
 urls.each do |url|
 
-	rss = RSS::Parser.parse(open(url).read, false).items[0..49]
+	rss = RSS::Parser.parse(open(url).read, false).items[0..50]
 	rss.each do |result|
 		# if result.description.empty?
 		# 	result.description = "Read me to discover what I'm all about...or not about about ;)"
@@ -28,8 +28,7 @@ urls.each do |url|
 			if result.description.include?('img')
 				img = doc.xpath("//img")[0]['src']
 			else
-				suckr = ImageSuckr::GoogleSuckr.new
-				img = suckr.get_image_url({"q" => result.title})
+				next
 			end
 
 		result = Submission.create({ title: result.title, url: result.link, description: Sanitize.clean(result.description.slice(0..200)), image: img })

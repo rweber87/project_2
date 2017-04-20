@@ -20,10 +20,9 @@ def parser
     		end
         doc = Nokogiri::HTML(result.description)
         img = doc.xpath("//img")[0]['src']
-        byebug
+
   		  result = Submission.create({ title: result.title, url: result.link, description: Sanitize.clean(result.description.slice(0..200)) })
       end
 
   	end
 end
-parser
