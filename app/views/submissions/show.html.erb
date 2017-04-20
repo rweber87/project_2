@@ -8,6 +8,25 @@
   <%= link_to 'Delete', @submission, controller: 'submissions', action: 'destroy', method: 'delete' %>
 <% end %>
 
+<h2 class="center">Vote or you're a dope!</h2>
+<div class="container">
+  <div class="row">
+    <div class="col s1">
+    </div>
+    <div class="thumbsup col s3">
+      <%= image_tag 'thumbsup.png', size: '125' %>
+    </div>
+    <div class="score center col s3">
+      Score<br> <%= @submission.score %>
+    </div>
+    <div class="col s1">
+    </div>
+    <div class="thumbsdown col s3">
+      <%= image_tag 'thumbdown.png', size: '125' %>
+    </div>
+  </div>
+</div>
+
 <h1>Create a comment</h1>
 <%= form_for @comment do |f| %>
   <%= f.label :body %>:
@@ -18,9 +37,10 @@
 <% end %>
 
 <h1>Comments</h1>
-<ol>
+<ul>
 <% @submission.comments.each do |comment| %>
-    <li><b><%= comment.user.username %></b><br> <%= comment.body %></li><br>
-
+  <div>
+    <li><b><%= comment.user.username %></b> (<i><%= time_ago_in_words(comment.created_at) %>)</i><br> <b>Comment:</b> <%= comment.body %></li><br>
+  </div>
 <% end %>
-</ol>
+</ul>

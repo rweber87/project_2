@@ -6,6 +6,7 @@
   </div>
 <% end %>
 
+
 <%= @submissions.map do |submission| %>
 <div class="row">
 	<div class="col s2" style="padding-top: 18px;">
@@ -14,7 +15,7 @@
 	<div class="col s10">
 		<ul>
 			<li>Score: <%= submission.score %></li>
-			<li><span class="h6 flow-text"><%= link_to submission.title, submission_path(submission) %></span></li>
+			<li><span class="flow-text"><%= link_to submission.title, submission_path(submission) %></span></li>
 			<li><span class="flow-text"><%= submission.description %></span></li>
 		</ul>
 	</div>

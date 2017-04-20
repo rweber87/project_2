@@ -16,12 +16,36 @@ results.items.last.pagemap.cse_image.first.src
 query = "Dwight Howard Clearly Doesn’t Know Team’s Name"
 results = GoogleCustomSearchApi.search(query)
 
-results.items.find_all do |item|
+results.items.each do |item|
   if item.include?("pagemap")
     puts item.pagemap.cse_image.first.src
   end
 end
 
+GoogleCustomSearchApi.search_and_return_all_results(query) do |results|
+  results.items.size == 10
+end
+
+page = MetaInspector.new('http://www.theonion.com/article/oklahoma-state-penitentiary-unveils-new-chamber-en-55809')
+page.image.best
+
+{"kind"=>"customsearch#search",
+"url"=>{"type"=>"application/json",
+"template"=>"https://www.googleapis.com/customsearch/v1?q={searchTerms}&num={count?}&start={startIndex?}&lr={language?}&safe={safe?}&cx={cx?}&cref={cref?}&sort={sort?}&filter={filter?}&gl={gl?}&cr={cr?}&googlehost={googleHost?}&c2coff={disableCnTwTranslation?}&hq={hq?}&hl={hl?}&siteSearch={siteSearch?}&siteSearchFilter={siteSearchFilter?}&exactTerms={exactTerms?}&excludeTerms={excludeTerms?}&linkSite={linkSite?}&orTerms={orTerms?}&relatedSite={relatedSite?}&dateRestrict={dateRestrict?}&lowRange={lowRange?}&highRange={highRange?}&searchType={searchType}&fileType={fileType?}&rights={rights?}&imgSize={imgSize?}&imgType={imgType?}&imgColorType={imgColorType?}&imgDominantColor={imgDominantColor?}&alt=json"},
+"queries"=>{"request"=>[{"title"=>"Google Custom Search -
+Dwight Howard Clearly Doesn’t Know Team’s Name",
+"totalResults"=>"0", "searchTerms"=>"Dwight Howard Clearly
+Doesn’t Know Team’s Name", "count"=>10, "startIndex"=>1,
+"inputEncoding"=>"utf8", "outputEncoding"=>"utf8",
+"safe"=>"off", "cx"=>"007714419444388121936:o1viibnb7-k"}]},
+"searchInformation"=>{"searchTime"=>0.543135,
+"formattedSearchTime"=>"0.54", "totalResults"=>"0",
+"formattedTotalResults"=>"0"},
+"spelling"=>{"correctedQuery"=>"Dwight Howard Clearly
+Doesn't Know Team’s Name", "htmlCorrectedQuery"=>"Dwight
+Howard Clearly <b><i>Doesn&#39;t</i></b> Know Team’s Name"},
+"items"=>[], "pages"=>0, "current_page"=>1,
+"next_page"=>nil, "previous_page"=>nil}
 
 
  => [
