@@ -14,7 +14,7 @@
 		</div>
 	<div class="col s10">
 		<ul>
-			<li>Score: <%= submission.score %></li>
+			<li>Score: <%= Vote.where(:submission_id => submission.id).sum(:upvote) %></li>
 			<li><span class="flow-text"><%= link_to submission.title, submission_path(submission) %></span></li>
 			<li><span class="flow-text"><%= submission.description %></span></li>
 		</ul>

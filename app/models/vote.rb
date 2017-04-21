@@ -1,12 +1,10 @@
 class Vote < ApplicationRecord
   belongs_to :user
-  belongs_to :votable, polymorphic: :true
-  # validates_presence_of :user_id
-  # validates_presence_of :votable
-  # validates_uniqueness_of :user_id, scope: :votable
+  belongs_to :submission
+  validates :user, presence: true
+  validates :submission, presence: true
+  validates :user_id, uniqueness: {scope: :submission_id}
 
-  def self.votable
 
-  end
 
 end

@@ -1,38 +1,23 @@
 class VotesController < ApplicationController
 
-  def thumbsup
-    vote = Vote.find_or_create_by(:user_id => session[:user_id], :submission_id => params[:id])
-    if vote.upvote == -1 || nil
-      vote.upvote += 1
+
+    def user_vote
+      submission_id = params[:id].split("_").first
+      vote_value = params[:id].split("_").last
+      vote = Vote.find_by(:user_id => session[:user_id], :submission_id => submission_id)
+
+      if vote.nil?
+        vote = Vote.create(:user_id => session[:user_id], :submission_id => submission_id, :upvote => vote_value)
+        flash[:notice] = "Successfully voted...'murica'"
+        redirect_to submission_path(submission_id)
+      elsif vote.upvote.to_i == vote_value.to_i
+        flash[:notice] = "You already voted for this article"
+        redirect_to submission_path(submission_id)
+      else
+        vote.update(upvote: vote_value)
+        flash[:notice] = "You changed your vote...'murica'"
+        redirect_to submission_path(submission_id)
+      end
+
     end
   end
-
-  def thumbsdown
-    vote = Vote.find_or_create_by(:user_id => session[:user_id], :submission_id => params[:id])
-    if vote.upvote == 1 || nil
-      vote.upvote -= 1
-    end
-  end
-
-#   def create
-#   @votable = Submission.find(params[:votable_id])
-#   current_user.vote(@votable, params[:upvote])
-#   respond_to do |format|
-#     format.html { redirect_to @user }
-#     format.js
-#   end
-# end
-#
-# def destroy
-#   @vote = Vote.find(params[:id]).votable
-#   current_user.unvote(@vote)
-#   respond_to do |format|
-#     format.html { redirect_to @user }
-#     format.js
-#   end
-# end
-#
-#   def destroy
-#
-#   end
-end

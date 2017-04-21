@@ -11,7 +11,7 @@ Rails.application.routes.draw do
 
   get '/login', to: 'sessions#new', as: :login
   post '/login', to: 'sessions#create'
-
+  post '/votes/:id', to:"votes#user_vote"
   delete '/signout', to: 'sessions#destroy', as: :signout
 
   # match 'auth/:provider/callback', to: 'sessions#fb_create', via: [:get, :post]

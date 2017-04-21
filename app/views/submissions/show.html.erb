@@ -14,17 +14,24 @@
     <div class="col s1">
     </div>
     <div class="thumbsup col s3">
-      <%= image_tag 'thumbsup.png', size: '125' %>
+      <%= link_to "http://localhost:3000/votes/#{@submission.id}_1", method:"post" do  %>
+        <%= image_tag 'thumbsup.png', size: '125' %>
+      <% end %>
     </div>
     <div class="score center col s3">
-      Score<br> <%= @submission.score %>
+      Score<br> <%= @votes %>
     </div>
     <div class="col s1">
     </div>
     <div class="thumbsdown col s3">
-      <%= image_tag 'thumbdown.png', size: '125' %>
+      <%= link_to "http://localhost:3000/votes/#{@submission.id}_-1", method:"post" do  %>
+        <%= image_tag 'thumbdown.png', size: '125' %>
+      <% end %>
     </div>
   </div>
+  <% if flash[:notice] %>
+    <%= flash[:notice] %>
+  <% end %>
 </div>
 
 <h1>Create a comment</h1>

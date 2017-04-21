@@ -2,12 +2,15 @@ class SubmissionsController < ApplicationController
 	before_filter :authorize, except: [:index, :show, :create, :destroy]
 
 	def index
-		@submissions = Submission.all.shuffle
+		@submissions = Submission.all.each_with_object({}) do |submission, new_hash|
+			new_hash[submission.id] = Vote.where(:submission_id => submission.id).sum(:upvote)
+		end.sort_by {|key, value| value}.reverse.to_h.keys.map {|key| Submission.find(key)}
 	end
 
 	def show
 		@submission = Submission.find(params[:id])
 		@comment = Comment.new
+		@votes = Vote.where(:submission_id => @submission.id).sum(:upvote)
 	end
 
 	def new
