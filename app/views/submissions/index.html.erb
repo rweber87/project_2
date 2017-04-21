@@ -1,4 +1,4 @@
-<h1>Submissions</h1>
+
 
 <!-- <%= @submissions.map do |submission| %>
 	<div class="row">
@@ -16,14 +16,17 @@
 <% end %> -->
 <%= @submissions.map do |submission| %>
 	<div class="col s12 m7">
-	    <h4 class="header"></h4>
 	    <div class="card horizontal">
 	      <div class="card-image">
-	        <%= image_tag submission.image, :class => "responsive-img" %>
+					<div style="margin-top:45px;">
+					<%= link_to submission_path(submission) do %>
+	        	<%= image_tag submission.image, :class => "responsive-img" %>
+					<% end %>
+					</div>
 	      </div>
 	      <div class="card-stacked">
 	        <div class="card-content">
-	          <span class="flow-text"><h4><%= submission.title %></h4><%= submission.description %></span>
+	          <span class="flow-text"><h4><%= link_to submission.title, submission_path(submission) %></h4><%= submission.description %></span>
 	        </div>
 	        <div class="card-action">
 	          <%= link_to "click here", submission_path(submission) %>
