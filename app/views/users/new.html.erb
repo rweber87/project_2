@@ -1,17 +1,20 @@
-<h1>Sign Up!</h1>
-
-<%= form_for(@user) do |f| %>
-  <p>
-    <%= f.label :username %>
-    <%= f.text_field :username %>
-  </p>
-  <p>
-    <%= f.label :password %>
-    <%= f.password_field :password %>
-  </p>
-  <p>
-    <%= f.label :password_confirmation %>
-    <%= f.password_field :password_confirmation %>
-  </p>
-  <%= f.submit 'Sign Up' %>
-<% end %>
+<div class="container">
+  <h3>Sign Up!</h3>
+  <br>
+  <%= form_for(@user) do |f| %>
+    <p>
+      <i class="material-icons prefix">account_circle</i><%= f.label :username, :style => 'margin-left:5px;font-size:28px;' %>
+      <%= f.text_field :username %>
+    </p>
+    <p>
+      <i class="material-icons prefix">verified_user</i><%= f.label :password, :style => 'margin-left:5px;font-size:28px;' %>
+      <%= f.password_field :password %>
+    </p>
+    <p>
+      <i class="material-icons prefix">verified_user</i><%= f.label :password_confirmation, :style => 'margin-left:5px;font-size:28px;' %>
+      <%= f.password_field :password_confirmation %>
+    </p>
+    <%= f.submit 'Sign Up', :class => 'btn waves-effect waves-light', :style => 'margin-bottom: 20px;' %>
+    <br>
+  <% end %>
+</div>
