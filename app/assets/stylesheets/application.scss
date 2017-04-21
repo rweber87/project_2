@@ -1,4 +1,19 @@
 @import "materialize";
+
+.thumbsup:hover {
+  opacity: 0.5;
+}
+
+.thumbsdown:hover {
+  opacity: 0.5;
+}
+
+.score {
+  font-family: Roboto;
+  font-weight: bold;
+  font-size: 30px;
+}
+
 .brand-logo {
   // font-family: 'Rubik Mono One', sans-serif;
   // font-family: 'Shadows Into Light', cursive;
