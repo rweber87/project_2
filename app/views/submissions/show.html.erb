@@ -3,15 +3,18 @@
 <%= image_tag @submission.image, :class => "responsive-img" %>
 <h5 class="flow-text"><%= @submission.description %></h4><br>
 
-<div class="left" style="margin-right:10px;">
-  <%= link_to 'Edit News', edit_submission_path, :class => 'btn waves-effect waves-light' %>
-</div>
-<div>
+
+
   <% if logged_in? %>
+<div>
+  <div class="left" style="margin-right:10px;">
+    <%= link_to 'Edit News', edit_submission_path, :class => 'btn waves-effect waves-light' %>
+  </div>
+  <div>
     <%= button_to 'Delete', @submission, controller: 'submissions', action: 'destroy', method: 'delete', :class => 'btn waves-effect waves-light' %>
-  <% end %>
+  </div>
 </div>
-<br>
+  <% end %>
 
 <br><br><div class="divider"></div><br>
 

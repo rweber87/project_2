@@ -34,7 +34,10 @@
          <li><%= link_to "Account (#{current_user.username})", current_user %></li>
       </ul>
      <% else %>
-      <%= button_to "Log in", login_path, :class => 'btn waves-effect waves-light right', :style => 'margin-top:40px;margin-right:25px;' %>
+    <div>
+      <div class="right"><%= button_to "Log in", login_path, :class => 'btn waves-effect waves-light right', :style => 'margin-top:40px;margin-right:25px;' %></div>
+      <!-- <div class=""><%= link_to "Sign up!", signup_path, :class => 'btn waves-effect waves-light right' %></div> -->
+    </div>
     <% end %>
 
    </div>
