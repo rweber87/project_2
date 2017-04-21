@@ -6809,3 +6809,727 @@ puma (3.8.2) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
   Rendering /Users/davidmieloch/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
   Rendered /Users/davidmieloch/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
   Rendered /Users/davidmieloch/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (72.7ms)
+Started GET "/" for ::1 at 2017-04-21 19:17:52 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by StaticPagesController#home as HTML
+  [1m[36mSubmission Load (0.9ms)[0m  [1m[34mSELECT "submissions".* FROM "submissions"[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 460]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 461]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 462]]
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 463]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 464]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 465]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 466]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 467]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 468]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 469]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 470]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 471]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 472]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 473]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 474]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 475]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 476]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 478]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 479]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 480]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 481]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 482]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 483]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 484]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 485]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 486]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 487]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 488]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 489]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 490]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 492]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 494]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 495]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 496]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 497]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 498]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 499]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 500]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 501]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 502]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 503]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 504]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 505]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 506]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 515]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 507]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 508]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 509]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 510]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 511]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 512]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 516]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 517]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 518]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 442]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 443]]
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 444]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 445]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 446]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 447]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 448]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 449]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 450]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 451]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 452]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 453]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 454]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 455]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 456]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 457]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 458]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 459]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 514]]
+  [1m[36mSubmission Load (0.4ms)[0m  [1m[34mSELECT  "submissions".* FROM "submissions" WHERE "submissions"."id" = $1 LIMIT $2[0m  [["id", 462], ["LIMIT", 1]]
+  [1m[36mSubmission Load (0.3ms)[0m  [1m[34mSELECT  "submissions".* FROM "submissions" WHERE "submissions"."id" = $1 LIMIT $2[0m  [["id", 461], ["LIMIT", 1]]
+  [1m[36mSubmission Load (0.3ms)[0m  [1m[34mSELECT  "submissions".* FROM "submissions" WHERE "submissions"."id" = $1 LIMIT $2[0m  [["id", 460], ["LIMIT", 1]]
+  [1m[36mSubmission Load (0.3ms)[0m  [1m[34mSELECT  "submissions".* FROM "submissions" WHERE "submissions"."id" = $1 LIMIT $2[0m  [["id", 509], ["LIMIT", 1]]
+  [1m[36mSubmission Load (0.3ms)[0m  [1m[34mSELECT  "submissions".* FROM "submissions" WHERE "submissions"."id" = $1 LIMIT $2[0m  [["id", 455], ["LIMIT", 1]]
+  [1m[36mSubmission Load (0.3ms)[0m  [1m[34mSELECT  "submissions".* FROM "submissions" WHERE "submissions"."id" = $1 LIMIT $2[0m  [["id", 454], ["LIMIT", 1]]
+  [1m[36mSubmission Load (0.2ms)[0m  [1m[34mSELECT  "submissions".* FROM "submissions" WHERE "submissions"."id" = $1 LIMIT $2[0m  [["id", 453], ["LIMIT", 1]]
+  [1m[36mSubmission Load (0.2ms)[0m  [1m[34mSELECT  "submissions".* FROM "submissions" WHERE "submissions"."id" = $1 LIMIT $2[0m  [["id", 452], ["LIMIT", 1]]
+  [1m[36mSubmission Load (0.2ms)[0m  [1m[34mSELECT  "submissions".* FROM "submissions" WHERE "submissions"."id" = $1 LIMIT $2[0m  [["id", 451], ["LIMIT", 1]]
+  [1m[36mSubmission Load (0.2ms)[0m  [1m[34mSELECT  "submissions".* FROM "submissions" WHERE "submissions"."id" = $1 LIMIT $2[0m  [["id", 449], ["LIMIT", 1]]
+  [1m[36mSubmission Load (0.2ms)[0m  [1m[34mSELECT  "submissions".* FROM "submissions" WHERE "submissions"."id" = $1 LIMIT $2[0m  [["id", 448], ["LIMIT", 1]]
+  [1m[36mSubmission Load (0.2ms)[0m  [1m[34mSELECT  "submissions".* FROM "submissions" WHERE "submissions"."id" = $1 LIMIT $2[0m  [["id", 447], ["LIMIT", 1]]
+  [1m[36mSubmission Load (0.2ms)[0m  [1m[34mSELECT  "submissions".* FROM "submissions" WHERE "submissions"."id" = $1 LIMIT $2[0m  [["id", 446], ["LIMIT", 1]]
+  [1m[36mSubmission Load (0.2ms)[0m  [1m[34mSELECT  "submissions".* FROM "submissions" WHERE "submissions"."id" = $1 LIMIT $2[0m  [["id", 445], ["LIMIT", 1]]
+  [1m[36mSubmission Load (0.2ms)[0m  [1m[34mSELECT  "submissions".* FROM "submissions" WHERE "submissions"."id" = $1 LIMIT $2[0m  [["id", 443], ["LIMIT", 1]]
+  [1m[36mSubmission Load (0.2ms)[0m  [1m[34mSELECT  "submissions".* FROM "submissions" WHERE "submissions"."id" = $1 LIMIT $2[0m  [["id", 442], ["LIMIT", 1]]
+  [1m[36mSubmission Load (0.2ms)[0m  [1m[34mSELECT  "submissions".* FROM "submissions" WHERE "submissions"."id" = $1 LIMIT $2[0m  [["id", 518], ["LIMIT", 1]]
+  [1m[36mSubmission Load (0.2ms)[0m  [1m[34mSELECT  "submissions".* FROM "submissions" WHERE "submissions"."id" = $1 LIMIT $2[0m  [["id", 517], ["LIMIT", 1]]
+  [1m[36mSubmission Load (0.2ms)[0m  [1m[34mSELECT  "submissions".* FROM "submissions" WHERE "submissions"."id" = $1 LIMIT $2[0m  [["id", 516], ["LIMIT", 1]]
+  [1m[36mSubmission Load (0.2ms)[0m  [1m[34mSELECT  "submissions".* FROM "submissions" WHERE "submissions"."id" = $1 LIMIT $2[0m  [["id", 512], ["LIMIT", 1]]
+  [1m[36mSubmission Load (0.1ms)[0m  [1m[34mSELECT  "submissions".* FROM "submissions" WHERE "submissions"."id" = $1 LIMIT $2[0m  [["id", 511], ["LIMIT", 1]]
+  [1m[36mSubmission Load (0.2ms)[0m  [1m[34mSELECT  "submissions".* FROM "submissions" WHERE "submissions"."id" = $1 LIMIT $2[0m  [["id", 510], ["LIMIT", 1]]
+  [1m[36mSubmission Load (0.1ms)[0m  [1m[34mSELECT  "submissions".* FROM "submissions" WHERE "submissions"."id" = $1 LIMIT $2[0m  [["id", 459], ["LIMIT", 1]]
+  [1m[36mSubmission Load (0.1ms)[0m  [1m[34mSELECT  "submissions".* FROM "submissions" WHERE "submissions"."id" = $1 LIMIT $2[0m  [["id", 458], ["LIMIT", 1]]
+  [1m[36mSubmission Load (0.1ms)[0m  [1m[34mSELECT  "submissions".* FROM "submissions" WHERE "submissions"."id" = $1 LIMIT $2[0m  [["id", 457], ["LIMIT", 1]]
+  [1m[36mSubmission Load (0.1ms)[0m  [1m[34mSELECT  "submissions".* FROM "submissions" WHERE "submissions"."id" = $1 LIMIT $2[0m  [["id", 456], ["LIMIT", 1]]
+  [1m[36mSubmission Load (0.1ms)[0m  [1m[34mSELECT  "submissions".* FROM "submissions" WHERE "submissions"."id" = $1 LIMIT $2[0m  [["id", 465], ["LIMIT", 1]]
+  [1m[36mSubmission Load (0.1ms)[0m  [1m[34mSELECT  "submissions".* FROM "submissions" WHERE "submissions"."id" = $1 LIMIT $2[0m  [["id", 464], ["LIMIT", 1]]
+  [1m[36mSubmission Load (0.1ms)[0m  [1m[34mSELECT  "submissions".* FROM "submissions" WHERE "submissions"."id" = $1 LIMIT $2[0m  [["id", 463], ["LIMIT", 1]]
+  [1m[36mSubmission Load (0.1ms)[0m  [1m[34mSELECT  "submissions".* FROM "submissions" WHERE "submissions"."id" = $1 LIMIT $2[0m  [["id", 514], ["LIMIT", 1]]
+  [1m[36mSubmission Load (0.2ms)[0m  [1m[34mSELECT  "submissions".* FROM "submissions" WHERE "submissions"."id" = $1 LIMIT $2[0m  [["id", 508], ["LIMIT", 1]]
+  [1m[36mSubmission Load (0.1ms)[0m  [1m[34mSELECT  "submissions".* FROM "submissions" WHERE "submissions"."id" = $1 LIMIT $2[0m  [["id", 507], ["LIMIT", 1]]
+  [1m[36mSubmission Load (0.2ms)[0m  [1m[34mSELECT  "submissions".* FROM "submissions" WHERE "submissions"."id" = $1 LIMIT $2[0m  [["id", 515], ["LIMIT", 1]]
+  [1m[36mSubmission Load (0.2ms)[0m  [1m[34mSELECT  "submissions".* FROM "submissions" WHERE "submissions"."id" = $1 LIMIT $2[0m  [["id", 506], ["LIMIT", 1]]
+  [1m[36mSubmission Load (0.2ms)[0m  [1m[34mSELECT  "submissions".* FROM "submissions" WHERE "submissions"."id" = $1 LIMIT $2[0m  [["id", 505], ["LIMIT", 1]]
+  [1m[36mSubmission Load (0.2ms)[0m  [1m[34mSELECT  "submissions".* FROM "submissions" WHERE "submissions"."id" = $1 LIMIT $2[0m  [["id", 504], ["LIMIT", 1]]
+  [1m[36mSubmission Load (0.2ms)[0m  [1m[34mSELECT  "submissions".* FROM "submissions" WHERE "submissions"."id" = $1 LIMIT $2[0m  [["id", 503], ["LIMIT", 1]]
+  [1m[36mSubmission Load (0.1ms)[0m  [1m[34mSELECT  "submissions".* FROM "submissions" WHERE "submissions"."id" = $1 LIMIT $2[0m  [["id", 502], ["LIMIT", 1]]
+  [1m[36mSubmission Load (0.1ms)[0m  [1m[34mSELECT  "submissions".* FROM "submissions" WHERE "submissions"."id" = $1 LIMIT $2[0m  [["id", 501], ["LIMIT", 1]]
+  [1m[36mSubmission Load (0.2ms)[0m  [1m[34mSELECT  "submissions".* FROM "submissions" WHERE "submissions"."id" = $1 LIMIT $2[0m  [["id", 500], ["LIMIT", 1]]
+  [1m[36mSubmission Load (0.2ms)[0m  [1m[34mSELECT  "submissions".* FROM "submissions" WHERE "submissions"."id" = $1 LIMIT $2[0m  [["id", 499], ["LIMIT", 1]]
+  [1m[36mSubmission Load (0.1ms)[0m  [1m[34mSELECT  "submissions".* FROM "submissions" WHERE "submissions"."id" = $1 LIMIT $2[0m  [["id", 498], ["LIMIT", 1]]
+  [1m[36mSubmission Load (0.2ms)[0m  [1m[34mSELECT  "submissions".* FROM "submissions" WHERE "submissions"."id" = $1 LIMIT $2[0m  [["id", 497], ["LIMIT", 1]]
+  [1m[36mSubmission Load (0.1ms)[0m  [1m[34mSELECT  "submissions".* FROM "submissions" WHERE "submissions"."id" = $1 LIMIT $2[0m  [["id", 496], ["LIMIT", 1]]
+  [1m[36mSubmission Load (0.2ms)[0m  [1m[34mSELECT  "submissions".* FROM "submissions" WHERE "submissions"."id" = $1 LIMIT $2[0m  [["id", 495], ["LIMIT", 1]]
+  [1m[36mSubmission Load (0.2ms)[0m  [1m[34mSELECT  "submissions".* FROM "submissions" WHERE "submissions"."id" = $1 LIMIT $2[0m  [["id", 494], ["LIMIT", 1]]
+  [1m[36mSubmission Load (0.2ms)[0m  [1m[34mSELECT  "submissions".* FROM "submissions" WHERE "submissions"."id" = $1 LIMIT $2[0m  [["id", 492], ["LIMIT", 1]]
+  [1m[36mSubmission Load (0.2ms)[0m  [1m[34mSELECT  "submissions".* FROM "submissions" WHERE "submissions"."id" = $1 LIMIT $2[0m  [["id", 490], ["LIMIT", 1]]
+  [1m[36mSubmission Load (0.2ms)[0m  [1m[34mSELECT  "submissions".* FROM "submissions" WHERE "submissions"."id" = $1 LIMIT $2[0m  [["id", 489], ["LIMIT", 1]]
+  [1m[36mSubmission Load (0.2ms)[0m  [1m[34mSELECT  "submissions".* FROM "submissions" WHERE "submissions"."id" = $1 LIMIT $2[0m  [["id", 488], ["LIMIT", 1]]
+  [1m[36mSubmission Load (0.2ms)[0m  [1m[34mSELECT  "submissions".* FROM "submissions" WHERE "submissions"."id" = $1 LIMIT $2[0m  [["id", 487], ["LIMIT", 1]]
+  [1m[36mSubmission Load (0.2ms)[0m  [1m[34mSELECT  "submissions".* FROM "submissions" WHERE "submissions"."id" = $1 LIMIT $2[0m  [["id", 486], ["LIMIT", 1]]
+  [1m[36mSubmission Load (0.1ms)[0m  [1m[34mSELECT  "submissions".* FROM "submissions" WHERE "submissions"."id" = $1 LIMIT $2[0m  [["id", 485], ["LIMIT", 1]]
+  [1m[36mSubmission Load (0.2ms)[0m  [1m[34mSELECT  "submissions".* FROM "submissions" WHERE "submissions"."id" = $1 LIMIT $2[0m  [["id", 484], ["LIMIT", 1]]
+  [1m[36mSubmission Load (0.2ms)[0m  [1m[34mSELECT  "submissions".* FROM "submissions" WHERE "submissions"."id" = $1 LIMIT $2[0m  [["id", 483], ["LIMIT", 1]]
+  [1m[36mSubmission Load (0.3ms)[0m  [1m[34mSELECT  "submissions".* FROM "submissions" WHERE "submissions"."id" = $1 LIMIT $2[0m  [["id", 481], ["LIMIT", 1]]
+  [1m[36mSubmission Load (0.3ms)[0m  [1m[34mSELECT  "submissions".* FROM "submissions" WHERE "submissions"."id" = $1 LIMIT $2[0m  [["id", 480], ["LIMIT", 1]]
+  [1m[36mSubmission Load (0.2ms)[0m  [1m[34mSELECT  "submissions".* FROM "submissions" WHERE "submissions"."id" = $1 LIMIT $2[0m  [["id", 479], ["LIMIT", 1]]
+  [1m[36mSubmission Load (0.2ms)[0m  [1m[34mSELECT  "submissions".* FROM "submissions" WHERE "submissions"."id" = $1 LIMIT $2[0m  [["id", 478], ["LIMIT", 1]]
+  [1m[36mSubmission Load (0.2ms)[0m  [1m[34mSELECT  "submissions".* FROM "submissions" WHERE "submissions"."id" = $1 LIMIT $2[0m  [["id", 476], ["LIMIT", 1]]
+  [1m[36mSubmission Load (0.2ms)[0m  [1m[34mSELECT  "submissions".* FROM "submissions" WHERE "submissions"."id" = $1 LIMIT $2[0m  [["id", 474], ["LIMIT", 1]]
+  [1m[36mSubmission Load (0.2ms)[0m  [1m[34mSELECT  "submissions".* FROM "submissions" WHERE "submissions"."id" = $1 LIMIT $2[0m  [["id", 473], ["LIMIT", 1]]
+  [1m[36mSubmission Load (0.2ms)[0m  [1m[34mSELECT  "submissions".* FROM "submissions" WHERE "submissions"."id" = $1 LIMIT $2[0m  [["id", 472], ["LIMIT", 1]]
+  [1m[36mSubmission Load (0.2ms)[0m  [1m[34mSELECT  "submissions".* FROM "submissions" WHERE "submissions"."id" = $1 LIMIT $2[0m  [["id", 471], ["LIMIT", 1]]
+  [1m[36mSubmission Load (0.3ms)[0m  [1m[34mSELECT  "submissions".* FROM "submissions" WHERE "submissions"."id" = $1 LIMIT $2[0m  [["id", 470], ["LIMIT", 1]]
+  [1m[36mSubmission Load (0.2ms)[0m  [1m[34mSELECT  "submissions".* FROM "submissions" WHERE "submissions"."id" = $1 LIMIT $2[0m  [["id", 469], ["LIMIT", 1]]
+  [1m[36mSubmission Load (0.2ms)[0m  [1m[34mSELECT  "submissions".* FROM "submissions" WHERE "submissions"."id" = $1 LIMIT $2[0m  [["id", 468], ["LIMIT", 1]]
+  [1m[36mSubmission Load (0.2ms)[0m  [1m[34mSELECT  "submissions".* FROM "submissions" WHERE "submissions"."id" = $1 LIMIT $2[0m  [["id", 467], ["LIMIT", 1]]
+  [1m[36mSubmission Load (0.2ms)[0m  [1m[34mSELECT  "submissions".* FROM "submissions" WHERE "submissions"."id" = $1 LIMIT $2[0m  [["id", 466], ["LIMIT", 1]]
+  [1m[36mSubmission Load (0.2ms)[0m  [1m[34mSELECT  "submissions".* FROM "submissions" WHERE "submissions"."id" = $1 LIMIT $2[0m  [["id", 475], ["LIMIT", 1]]
+  [1m[36mSubmission Load (0.2ms)[0m  [1m[34mSELECT  "submissions".* FROM "submissions" WHERE "submissions"."id" = $1 LIMIT $2[0m  [["id", 482], ["LIMIT", 1]]
+  [1m[36mSubmission Load (0.3ms)[0m  [1m[34mSELECT  "submissions".* FROM "submissions" WHERE "submissions"."id" = $1 LIMIT $2[0m  [["id", 444], ["LIMIT", 1]]
+  [1m[36mSubmission Load (0.2ms)[0m  [1m[34mSELECT  "submissions".* FROM "submissions" WHERE "submissions"."id" = $1 LIMIT $2[0m  [["id", 450], ["LIMIT", 1]]
+  Rendering static_pages/home.html.erb within layouts/application
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 462]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 461]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 460]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 509]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 455]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 454]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 453]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 452]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 451]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 449]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 448]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 447]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 446]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 445]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 443]]
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 442]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 518]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 517]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 516]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 512]]
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 511]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 510]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 459]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 458]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 457]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 456]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 465]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 464]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 463]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 514]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 508]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 507]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 515]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 506]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 505]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 504]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 503]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 502]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 501]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 500]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 499]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 498]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 497]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 496]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 495]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 494]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 492]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 490]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 489]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 488]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 487]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 486]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 485]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 484]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 483]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 481]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 480]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 479]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 478]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 476]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 474]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 473]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 472]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 471]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 470]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 469]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 468]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 467]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 466]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 475]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 482]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 444]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 450]]
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 22], ["LIMIT", 1]]
+  Rendered static_pages/home.html.erb within layouts/application (83.6ms)
+  Rendered layouts/_shim.html.erb (232.1ms)
+  Rendered layouts/_header.html.erb (2.6ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 471ms (Views: 314.0ms | ActiveRecord: 53.2ms)
+
+
+Started GET "/stylesheets/materialize.min.css" for ::1 at 2017-04-21 19:17:53 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/stylesheets/materialize.min.css"):
+  
+actionpack (5.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.5.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.0) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.0) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.2) lib/rails/engine.rb:522:in `call'
+puma (3.8.2) lib/puma/configuration.rb:224:in `call'
+puma (3.8.2) lib/puma/server.rb:600:in `handle_request'
+puma (3.8.2) lib/puma/server.rb:435:in `process_client'
+puma (3.8.2) lib/puma/server.rb:299:in `block in run'
+puma (3.8.2) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+  Rendering /Users/davidmieloch/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /Users/davidmieloch/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/davidmieloch/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.9ms)
+  Rendered collection of /Users/davidmieloch/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/routes/_route.html.erb [23 times] (5.9ms)
+  Rendered /Users/davidmieloch/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/routes/_table.html.erb (6.7ms)
+  Rendering /Users/davidmieloch/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/davidmieloch/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /Users/davidmieloch/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (79.2ms)
+Started GET "/submissions/462" for ::1 at 2017-04-21 19:18:15 -0400
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:SubmissionsController> at /Users/davidmieloch/dev/project_2/app/controllers/submissions_controller.rb:2)
+Processing by SubmissionsController#show as HTML
+  Parameters: {"id"=>"462"}
+  [1m[36mSubmission Load (0.4ms)[0m  [1m[34mSELECT  "submissions".* FROM "submissions" WHERE "submissions"."id" = $1 LIMIT $2[0m  [["id", 462], ["LIMIT", 1]]
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 462]]
+  Rendering submissions/show.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 22], ["LIMIT", 1]]
+  [1m[36mComment Load (0.4ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."submission_id" = $1[0m  [["submission_id", 462]]
+  Rendered submissions/show.html.erb within layouts/application (62.4ms)
+  Rendered layouts/_shim.html.erb (26.4ms)
+  Rendered layouts/_header.html.erb (2.5ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 116ms (Views: 99.7ms | ActiveRecord: 5.4ms)
+
+
+Started POST "/votes/462_1" for ::1 at 2017-04-21 19:18:21 -0400
+Processing by VotesController#user_vote as HTML
+  Parameters: {"authenticity_token"=>"NlXxYeSBPaGuvhuEoNC8/YX4sfsoHApnbcSiVS0qETXvBRJei6uhRTBnJH5TU/7s3VLLM4h5MgqxdLcEBMIqxg==", "id"=>"462_1"}
+  [1m[36mVote Load (0.3ms)[0m  [1m[34mSELECT  "votes".* FROM "votes" WHERE "votes"."user_id" = $1 AND "votes"."submission_id" = $2 LIMIT $3[0m  [["user_id", 22], ["submission_id", 462], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 22], ["LIMIT", 1]]
+  [1m[36mSubmission Load (0.3ms)[0m  [1m[34mSELECT  "submissions".* FROM "submissions" WHERE "submissions"."id" = $1 LIMIT $2[0m  [["id", 462], ["LIMIT", 1]]
+  [1m[36mVote Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "votes" WHERE "votes"."user_id" = $1 AND "votes"."submission_id" = $2 LIMIT $3[0m  [["user_id", 22], ["submission_id", 462], ["LIMIT", 1]]
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "votes" ("user_id", "submission_id", "upvote", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["user_id", 22], ["submission_id", 462], ["upvote", 1], ["created_at", 2017-04-21 23:18:21 UTC], ["updated_at", 2017-04-21 23:18:21 UTC]]
+  [1m[35m (6.2ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/submissions/462
+Completed 302 Found in 34ms (ActiveRecord: 9.9ms)
+
+
+Started GET "/submissions/462" for ::1 at 2017-04-21 19:18:21 -0400
+Processing by SubmissionsController#show as HTML
+  Parameters: {"id"=>"462"}
+  [1m[36mSubmission Load (0.2ms)[0m  [1m[34mSELECT  "submissions".* FROM "submissions" WHERE "submissions"."id" = $1 LIMIT $2[0m  [["id", 462], ["LIMIT", 1]]
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 462]]
+  Rendering submissions/show.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 22], ["LIMIT", 1]]
+  [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."submission_id" = $1[0m  [["submission_id", 462]]
+  Rendered submissions/show.html.erb within layouts/application (8.4ms)
+  Rendered layouts/_shim.html.erb (38.1ms)
+  Rendered layouts/_header.html.erb (2.5ms)
+  Rendered layouts/_footer.html.erb (0.6ms)
+Completed 200 OK in 59ms (Views: 55.2ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/submissions/stylesheets/materialize.min.css" for ::1 at 2017-04-21 19:18:21 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/submissions/stylesheets/materialize.min.css"):
+  
+actionpack (5.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.5.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.0) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.0) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.2) lib/rails/engine.rb:522:in `call'
+puma (3.8.2) lib/puma/configuration.rb:224:in `call'
+puma (3.8.2) lib/puma/server.rb:600:in `handle_request'
+puma (3.8.2) lib/puma/server.rb:435:in `process_client'
+puma (3.8.2) lib/puma/server.rb:299:in `block in run'
+puma (3.8.2) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+  Rendering /Users/davidmieloch/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /Users/davidmieloch/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/davidmieloch/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.8ms)
+  Rendered collection of /Users/davidmieloch/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/routes/_route.html.erb [23 times] (8.4ms)
+  Rendered /Users/davidmieloch/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.8ms)
+  Rendering /Users/davidmieloch/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/davidmieloch/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /Users/davidmieloch/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (81.7ms)
+Started POST "/votes/462_1" for ::1 at 2017-04-21 19:18:52 -0400
+Processing by VotesController#user_vote as HTML
+  Parameters: {"authenticity_token"=>"zWfk3XS7MMXhKrAiBAEmpXiXJ/t6MEY1HMeHJoVwAfQUNwfiG5GsIX/zj9j3gmS0ID1dM9pVfljAd5J3rJg6Bw==", "id"=>"462_1"}
+  [1m[36mVote Load (0.3ms)[0m  [1m[34mSELECT  "votes".* FROM "votes" WHERE "votes"."user_id" = $1 AND "votes"."submission_id" = $2 LIMIT $3[0m  [["user_id", 22], ["submission_id", 462], ["LIMIT", 1]]
+Redirected to http://localhost:3000/submissions/462
+Completed 302 Found in 3ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/submissions/462" for ::1 at 2017-04-21 19:18:52 -0400
+Processing by SubmissionsController#show as HTML
+  Parameters: {"id"=>"462"}
+  [1m[36mSubmission Load (0.2ms)[0m  [1m[34mSELECT  "submissions".* FROM "submissions" WHERE "submissions"."id" = $1 LIMIT $2[0m  [["id", 462], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 462]]
+  Rendering submissions/show.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 22], ["LIMIT", 1]]
+  [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."submission_id" = $1[0m  [["submission_id", 462]]
+  Rendered submissions/show.html.erb within layouts/application (9.0ms)
+  Rendered layouts/_shim.html.erb (28.3ms)
+  Rendered layouts/_header.html.erb (1.5ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 49ms (Views: 45.0ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/submissions/stylesheets/materialize.min.css" for ::1 at 2017-04-21 19:18:52 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/submissions/stylesheets/materialize.min.css"):
+  
+actionpack (5.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.5.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.0) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.0) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.2) lib/rails/engine.rb:522:in `call'
+puma (3.8.2) lib/puma/configuration.rb:224:in `call'
+puma (3.8.2) lib/puma/server.rb:600:in `handle_request'
+puma (3.8.2) lib/puma/server.rb:435:in `process_client'
+puma (3.8.2) lib/puma/server.rb:299:in `block in run'
+puma (3.8.2) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+  Rendering /Users/davidmieloch/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /Users/davidmieloch/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/davidmieloch/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.8ms)
+  Rendered collection of /Users/davidmieloch/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/routes/_route.html.erb [23 times] (6.9ms)
+  Rendered /Users/davidmieloch/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/routes/_table.html.erb (0.8ms)
+  Rendering /Users/davidmieloch/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/davidmieloch/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /Users/davidmieloch/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (75.5ms)
+Started POST "/votes/462_-1" for ::1 at 2017-04-21 19:18:56 -0400
+Processing by VotesController#user_vote as HTML
+  Parameters: {"authenticity_token"=>"7feGTyPwzwpKGCl4RXbo8DaLu/NoVzHrbN24rGq/wbM0p2VwTNpT7tTBFoK29arhbiHBO8gyCYawba39Q1f6QA==", "id"=>"462_-1"}
+  [1m[36mVote Load (0.3ms)[0m  [1m[34mSELECT  "votes".* FROM "votes" WHERE "votes"."user_id" = $1 AND "votes"."submission_id" = $2 LIMIT $3[0m  [["user_id", 22], ["submission_id", 462], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 22], ["LIMIT", 1]]
+  [1m[36mSubmission Load (0.3ms)[0m  [1m[34mSELECT  "submissions".* FROM "submissions" WHERE "submissions"."id" = $1 LIMIT $2[0m  [["id", 462], ["LIMIT", 1]]
+  [1m[36mVote Exists (0.7ms)[0m  [1m[34mSELECT  1 AS one FROM "votes" WHERE "votes"."user_id" = $1 AND ("votes"."id" != $2) AND "votes"."submission_id" = $3 LIMIT $4[0m  [["user_id", 22], ["id", 11], ["submission_id", 462], ["LIMIT", 1]]
+  [1m[35mSQL (0.4ms)[0m  [1m[33mUPDATE "votes" SET "upvote" = $1, "updated_at" = $2 WHERE "votes"."id" = $3[0m  [["upvote", -1], ["updated_at", 2017-04-21 23:18:56 UTC], ["id", 11]]
+  [1m[35m (6.3ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/submissions/462
+Completed 302 Found in 16ms (ActiveRecord: 8.5ms)
+
+
+Started GET "/submissions/462" for ::1 at 2017-04-21 19:18:56 -0400
+Processing by SubmissionsController#show as HTML
+  Parameters: {"id"=>"462"}
+  [1m[36mSubmission Load (0.4ms)[0m  [1m[34mSELECT  "submissions".* FROM "submissions" WHERE "submissions"."id" = $1 LIMIT $2[0m  [["id", 462], ["LIMIT", 1]]
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 462]]
+  Rendering submissions/show.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 22], ["LIMIT", 1]]
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."submission_id" = $1[0m  [["submission_id", 462]]
+  Rendered submissions/show.html.erb within layouts/application (5.5ms)
+  Rendered layouts/_shim.html.erb (23.2ms)
+  Rendered layouts/_header.html.erb (1.3ms)
+  Rendered layouts/_footer.html.erb (1.1ms)
+Completed 200 OK in 41ms (Views: 36.4ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/submissions/stylesheets/materialize.min.css" for ::1 at 2017-04-21 19:18:56 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/submissions/stylesheets/materialize.min.css"):
+  
+actionpack (5.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.5.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.0) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.0) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.2) lib/rails/engine.rb:522:in `call'
+puma (3.8.2) lib/puma/configuration.rb:224:in `call'
+puma (3.8.2) lib/puma/server.rb:600:in `handle_request'
+puma (3.8.2) lib/puma/server.rb:435:in `process_client'
+puma (3.8.2) lib/puma/server.rb:299:in `block in run'
+puma (3.8.2) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+  Rendering /Users/davidmieloch/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /Users/davidmieloch/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/davidmieloch/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered collection of /Users/davidmieloch/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/routes/_route.html.erb [23 times] (5.1ms)
+  Rendered /Users/davidmieloch/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.0ms)
+  Rendering /Users/davidmieloch/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/davidmieloch/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/davidmieloch/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (83.3ms)
+Started POST "/comments" for ::1 at 2017-04-21 19:19:11 -0400
+Processing by CommentsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Tvk+1pFql8wXUXuCB04h6jVjW5jBwq2RQ3Fob0OKc4WXqd3p/kALKImIRHj0zWP7bckhUGGnlfyfwX0+amJIdg==", "comment"=>{"body"=>"Comennt!!!!!\r\n", "submission_id"=>"462"}, "commit"=>"Create Comment"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mSubmission Load (0.2ms)[0m  [1m[34mSELECT  "submissions".* FROM "submissions" WHERE "submissions"."id" = $1 LIMIT $2[0m  [["id", 462], ["LIMIT", 1]]
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 22], ["LIMIT", 1]]
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "comments" ("body", "user_id", "submission_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["body", "Comennt!!!!!\r\n"], ["user_id", 22], ["submission_id", 462], ["created_at", 2017-04-21 23:19:11 UTC], ["updated_at", 2017-04-21 23:19:11 UTC]]
+  [1m[35m (5.5ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/submissions/462
+Completed 302 Found in 14ms (ActiveRecord: 6.7ms)
+
+
+Started GET "/submissions/462" for ::1 at 2017-04-21 19:19:11 -0400
+Processing by SubmissionsController#show as HTML
+  Parameters: {"id"=>"462"}
+  [1m[36mSubmission Load (0.3ms)[0m  [1m[34mSELECT  "submissions".* FROM "submissions" WHERE "submissions"."id" = $1 LIMIT $2[0m  [["id", 462], ["LIMIT", 1]]
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 462]]
+  Rendering submissions/show.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 22], ["LIMIT", 1]]
+  [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."submission_id" = $1[0m  [["submission_id", 462]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 22], ["LIMIT", 1]]
+  Rendered submissions/show.html.erb within layouts/application (6.4ms)
+  Rendered layouts/_shim.html.erb (22.5ms)
+  Rendered layouts/_header.html.erb (2.1ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 41ms (Views: 36.9ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/submissions/stylesheets/materialize.min.css" for ::1 at 2017-04-21 19:19:11 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/submissions/stylesheets/materialize.min.css"):
+  
+actionpack (5.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.5.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.0) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.0) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.2) lib/rails/engine.rb:522:in `call'
+puma (3.8.2) lib/puma/configuration.rb:224:in `call'
+puma (3.8.2) lib/puma/server.rb:600:in `handle_request'
+puma (3.8.2) lib/puma/server.rb:435:in `process_client'
+puma (3.8.2) lib/puma/server.rb:299:in `block in run'
+puma (3.8.2) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+  Rendering /Users/davidmieloch/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /Users/davidmieloch/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/davidmieloch/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.8ms)
+  Rendered collection of /Users/davidmieloch/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/routes/_route.html.erb [23 times] (5.6ms)
+  Rendered /Users/davidmieloch/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.1ms)
+  Rendering /Users/davidmieloch/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/davidmieloch/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /Users/davidmieloch/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (80.7ms)
+Started POST "/comments" for ::1 at 2017-04-21 19:19:41 -0400
+Processing by CommentsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"+E3LnJqo83D4/SS+wHc2iHzLe+KufhRI1Bd/ClddI48hHSij9YJvlGYkG0Qz9HSZJGEBKg4bLCUIp2pbfrUYfA==", "comment"=>{"body"=>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean sodales gravida ipsum, in commodo risus faucibus vitae. Donec id felis viverra, vehicula arcu nec, porttitor massa. Vestibulum vitae efficitur elit. Integer faucibus imperdiet ex at dignissim. Sed nulla lacus, viverra vitae quam non, gravida egestas nibh. Curabitur nulla nisl, hendrerit in mattis in, feugiat ut augue. Fusce justo arcu, tristique eu fringilla vitae, efficitur pulvinar sapien. Aliquam facilisis urna quis elit eleifend sagittis. Fusce id pretium ipsum. Morbi posuere consequat nunc vitae tempus. Praesent in vulputate est.", "submission_id"=>"462"}, "commit"=>"Create Comment"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mSubmission Load (0.3ms)[0m  [1m[34mSELECT  "submissions".* FROM "submissions" WHERE "submissions"."id" = $1 LIMIT $2[0m  [["id", 462], ["LIMIT", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 22], ["LIMIT", 1]]
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "comments" ("body", "user_id", "submission_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["body", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean sodales gravida ipsum, in commodo risus faucibus vitae. Donec id felis viverra, vehicula arcu nec, porttitor massa. Vestibulum vitae efficitur elit. Integer faucibus imperdiet ex at dignissim. Sed nulla lacus, viverra vitae quam non, gravida egestas nibh. Curabitur nulla nisl, hendrerit in mattis in, feugiat ut augue. Fusce justo arcu, tristique eu fringilla vitae, efficitur pulvinar sapien. Aliquam facilisis urna quis elit eleifend sagittis. Fusce id pretium ipsum. Morbi posuere consequat nunc vitae tempus. Praesent in vulputate est."], ["user_id", 22], ["submission_id", 462], ["created_at", 2017-04-21 23:19:41 UTC], ["updated_at", 2017-04-21 23:19:41 UTC]]
+  [1m[35m (6.4ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/submissions/462
+Completed 302 Found in 12ms (ActiveRecord: 7.5ms)
+
+
+Started GET "/submissions/462" for ::1 at 2017-04-21 19:19:41 -0400
+Processing by SubmissionsController#show as HTML
+  Parameters: {"id"=>"462"}
+  [1m[36mSubmission Load (0.2ms)[0m  [1m[34mSELECT  "submissions".* FROM "submissions" WHERE "submissions"."id" = $1 LIMIT $2[0m  [["id", 462], ["LIMIT", 1]]
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 462]]
+  Rendering submissions/show.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 22], ["LIMIT", 1]]
+  [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."submission_id" = $1[0m  [["submission_id", 462]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 22], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 22], ["LIMIT", 1]]
+  Rendered submissions/show.html.erb within layouts/application (8.8ms)
+  Rendered layouts/_shim.html.erb (25.2ms)
+  Rendered layouts/_header.html.erb (2.5ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 47ms (Views: 43.5ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/submissions/stylesheets/materialize.min.css" for ::1 at 2017-04-21 19:19:41 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/submissions/stylesheets/materialize.min.css"):
+  
+actionpack (5.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.5.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.0) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.0) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.2) lib/rails/engine.rb:522:in `call'
+puma (3.8.2) lib/puma/configuration.rb:224:in `call'
+puma (3.8.2) lib/puma/server.rb:600:in `handle_request'
+puma (3.8.2) lib/puma/server.rb:435:in `process_client'
+puma (3.8.2) lib/puma/server.rb:299:in `block in run'
+puma (3.8.2) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+  Rendering /Users/davidmieloch/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /Users/davidmieloch/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/davidmieloch/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.9ms)
+  Rendered collection of /Users/davidmieloch/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/routes/_route.html.erb [23 times] (4.8ms)
+  Rendered /Users/davidmieloch/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.0ms)
+  Rendering /Users/davidmieloch/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/davidmieloch/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /Users/davidmieloch/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (74.3ms)
+Started GET "/submissions/462" for ::1 at 2017-04-21 19:20:08 -0400
+Processing by SubmissionsController#show as HTML
+  Parameters: {"id"=>"462"}
+  [1m[36mSubmission Load (0.2ms)[0m  [1m[34mSELECT  "submissions".* FROM "submissions" WHERE "submissions"."id" = $1 LIMIT $2[0m  [["id", 462], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 462]]
+  Rendering submissions/show.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 22], ["LIMIT", 1]]
+  [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."submission_id" = $1[0m  [["submission_id", 462]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 22], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 22], ["LIMIT", 1]]
+  Rendered submissions/show.html.erb within layouts/application (7.9ms)
+  Rendered layouts/_shim.html.erb (20.0ms)
+  Rendered layouts/_header.html.erb (1.3ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 38ms (Views: 34.2ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/submissions/stylesheets/materialize.min.css" for ::1 at 2017-04-21 19:20:08 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/submissions/stylesheets/materialize.min.css"):
+  
+actionpack (5.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.5.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.0) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.0) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.2) lib/rails/engine.rb:522:in `call'
+puma (3.8.2) lib/puma/configuration.rb:224:in `call'
+puma (3.8.2) lib/puma/server.rb:600:in `handle_request'
+puma (3.8.2) lib/puma/server.rb:435:in `process_client'
+puma (3.8.2) lib/puma/server.rb:299:in `block in run'
+puma (3.8.2) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+  Rendering /Users/davidmieloch/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /Users/davidmieloch/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/davidmieloch/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered collection of /Users/davidmieloch/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/routes/_route.html.erb [23 times] (6.6ms)
+  Rendered /Users/davidmieloch/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.1ms)
+  Rendering /Users/davidmieloch/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/davidmieloch/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /Users/davidmieloch/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (76.4ms)
+Started GET "/submissions/462" for ::1 at 2017-04-21 19:20:54 -0400
+Processing by SubmissionsController#show as HTML
+  Parameters: {"id"=>"462"}
+  [1m[36mSubmission Load (0.5ms)[0m  [1m[34mSELECT  "submissions".* FROM "submissions" WHERE "submissions"."id" = $1 LIMIT $2[0m  [["id", 462], ["LIMIT", 1]]
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 462]]
+  Rendering submissions/show.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 22], ["LIMIT", 1]]
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."submission_id" = $1[0m  [["submission_id", 462]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 22], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 22], ["LIMIT", 1]]
+  Rendered submissions/show.html.erb within layouts/application (7.9ms)
+  Rendered layouts/_shim.html.erb (19.7ms)
+  Rendered layouts/_header.html.erb (1.2ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 38ms (Views: 34.3ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/submissions/stylesheets/materialize.min.css" for ::1 at 2017-04-21 19:20:54 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/submissions/stylesheets/materialize.min.css"):
+  
+actionpack (5.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.5.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.0) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.0) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.2) lib/rails/engine.rb:522:in `call'
+puma (3.8.2) lib/puma/configuration.rb:224:in `call'
+puma (3.8.2) lib/puma/server.rb:600:in `handle_request'
+puma (3.8.2) lib/puma/server.rb:435:in `process_client'
+puma (3.8.2) lib/puma/server.rb:299:in `block in run'
+puma (3.8.2) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+  Rendering /Users/davidmieloch/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /Users/davidmieloch/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/davidmieloch/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (8.7ms)
+  Rendered collection of /Users/davidmieloch/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/routes/_route.html.erb [23 times] (6.0ms)
+  Rendered /Users/davidmieloch/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/routes/_table.html.erb (0.9ms)
+  Rendering /Users/davidmieloch/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/davidmieloch/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/davidmieloch/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (80.0ms)
