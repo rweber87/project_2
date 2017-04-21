@@ -26,12 +26,6 @@ gem 'sanitize', '~> 4.4'
 
 gem 'metainspector'
 
-# gem 'feedjira'
-
-# gem 'image_suckr'
-#
-# gem 'scrapix'
-
 gem 'link_preview', '~> 0.3.5'
 
 # Use jquery as the JavaScript library
