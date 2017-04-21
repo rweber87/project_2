@@ -2,6 +2,12 @@
   <aside>
     <section>
       <h1><%= @user.username.split.map(&:capitalize).join(' ') %></h1>
+      <div class="left" style="margin-right:10px;">
+        <%= link_to 'Edit', edit_user_path, :class => 'btn waves-effect waves-light' %>
+      </div>
+      <div>
+        <%= link_to "Sign out", signout_path, method: :delete, :class => 'btn waves-effect waves-light' %>
+      </div>
       <h2>link points: 0</h2>
     </section>
   </aside>
@@ -9,11 +15,11 @@
     <section>
       <h1>Posts</h1>
       <section>
-        User submissions
+        <p>User submissions</p>
       </section>
       <br>
       <h1>Comments</h1>
-        User comments
+      <p>User comments</p>
     </section>
   </aside>
 </div>

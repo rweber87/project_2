@@ -7,7 +7,7 @@
 
 (function() {
   this.App || (this.App = {});
-
+  $(".dropdown-button").dropdown();
   App.cable = ActionCable.createConsumer();
 
 }).call(this);
