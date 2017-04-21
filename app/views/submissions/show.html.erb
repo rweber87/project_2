@@ -1,10 +1,10 @@
-<h2><%= link_to @submission.title, @submission.url, target: :_blank%></h2>
+<h2><%= link_to @submission.title, @submission.url, target: :_blank %></h2>
 <div class="divider"></div><br>
 <%= image_tag @submission.image, :class => "responsive-img" %>
 <h5 class="flow-text"><%= @submission.description %></h4><br>
 
 <div class="left" style="margin-right:10px;">
-  <%= link_to 'Edit', edit_submission_path, :class => 'btn waves-effect waves-light' %>
+  <%= link_to 'Edit News', edit_submission_path, :class => 'btn waves-effect waves-light' %>
 </div>
 <div>
   <% if logged_in? %>
@@ -12,18 +12,31 @@
   <% end %>
 </div>
 <br>
-<div class="divider"></div>
-<h3>What do you think?</h3>
 
-<%= form_for @comment do |f| %>
-  <%= f.label :body %>:
-  <%= f.text_area(:body, size: '50x10') %>
-  <%= f.hidden_field :submission_id, value: @submission.id %>
-  <p><%= f.submit :class => 'btn waves-effect waves-light' %></p>
-  <br>
+<br><br><div class="divider"></div><br>
+
+<% if logged_in? %>
+  <h3>What do you think?</h3>
+
+  <%= form_for @comment do |f| %>
+    <%= f.label :body %>:
+    <%= f.text_area(:body, size: '50x10') %>
+    <%= f.hidden_field :submission_id, value: @submission.id %>
+    <p><%= f.submit :class => 'btn waves-effect waves-light' %></p>
+    <br>
+  <% end %>
+<% else %>
+  <h3>What do you think?</h3>
+  <div class="left">
+    <%= button_to "Log in", login_path, :class => 'btn waves-effect waves-light left', :style => "margin-right:20px;" %>
+  </div>
+  <div>
+    <%= link_to "Sign up now!", signup_path, :class => 'btn waves-effect waves-light' %>
+  </div>
 <% end %>
 
-<div class="divider"></div>
+
+<br><div class="divider"></div><br>
 
 <h3>What everybody else thinks:</h3>
 <% @submission.comments.each do |comment| %>
