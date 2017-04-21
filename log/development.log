@@ -38987,3 +38987,62 @@ Processing by SubmissionsController#index as HTML
 Completed 200 OK in 51ms (Views: 46.4ms | ActiveRecord: 0.9ms)
 
 
+Started GET "/" for ::1 at 2017-04-21 12:12:19 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  [1m[36mSubmission Load (1.1ms)[0m  [1m[34mSELECT "submissions".* FROM "submissions"[0m
+  Rendered static_pages/home.html.erb within layouts/application (3695.4ms)
+Completed 500 Internal Server Error in 3728ms (ActiveRecord: 6.1ms)
+
+
+  
+ActionView::Template::Error (nil is not a valid asset source):
+     9: <%= @submissions.map do |submission| %>
+    10: <div class="row">
+    11: 	<div class="col s2" style="padding-top: 18px;">
+    12: 			<%= image_tag submission.image, :class => "responsive-img" %>
+    13: 		</div>
+    14: 	<div class="col s10">
+    15: 		<ul>
+  
+app/views/static_pages/home.html.erb:12:in `block in _app_views_static_pages_home_html_erb__1956864701559902078_70321745880720'
+app/views/static_pages/home.html.erb:9:in `_app_views_static_pages_home_html_erb__1956864701559902078_70321745880720'
+  Rendering /Users/Rob/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/Rob/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/Rob/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.9ms)
+  Rendering /Users/Rob/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/Rob/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.7ms)
+  Rendering /Users/Rob/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/Rob/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/Rob/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (73.3ms)
+Started GET "/submissions" for ::1 at 2017-04-21 12:12:30 -0400
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:SubmissionsController> at /Users/Rob/Flatiron/Projects/project_2/app/controllers/submissions_controller.rb:2)
+Processing by SubmissionsController#index as HTML
+  [1m[36mSubmission Load (2.3ms)[0m  [1m[34mSELECT "submissions".* FROM "submissions"[0m
+  Rendering submissions/index.html.erb within layouts/application
+  Rendered submissions/index.html.erb within layouts/application (45.1ms)
+Completed 500 Internal Server Error in 72ms (ActiveRecord: 2.3ms)
+
+
+  
+ActionView::Template::Error (nil is not a valid asset source):
+    3: <%= @submissions.map do |submission| %>
+    4: 	<div class="row">
+    5: 		<div class="col s2" style="padding-top: 18px;">
+    6: 				<%= image_tag submission.image, :class => "responsive-img" %>
+    7: 			</div>
+    8: 		<div class="col s10">
+    9: 			<ul>
+  
+app/views/submissions/index.html.erb:6:in `block in _app_views_submissions_index_html_erb__3132385207385855797_70321802418860'
+app/views/submissions/index.html.erb:3:in `map'
+app/views/submissions/index.html.erb:3:in `_app_views_submissions_index_html_erb__3132385207385855797_70321802418860'
+  Rendering /Users/Rob/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/Rob/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/Rob/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (5.2ms)
+  Rendering /Users/Rob/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/Rob/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.1ms)
+  Rendering /Users/Rob/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/Rob/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/Rob/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (81.6ms)
