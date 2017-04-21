@@ -22,11 +22,7 @@ gem 'coffee-rails', '~> 4.2'
 # See https://github.com/rails/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
 
-gem 'redd'
-
 gem 'sanitize', '~> 4.4'
-
-gem "google_custom_search_api"
 
 gem 'metainspector'
 
@@ -38,9 +34,6 @@ gem 'metainspector'
 
 gem 'link_preview', '~> 0.3.5'
 
-gem 'omniauth'
-
-gem 'omniauth-facebook', '1.4.0'
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
 # Turbolinks makes navigating your web application faster. Read more: https://github.com/turbolinks/turbolinks
