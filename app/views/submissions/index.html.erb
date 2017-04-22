@@ -1,20 +1,4 @@
-
-
-<!-- <%= @submissions.map do |submission| %>
-	<div class="row">
-		<div class="col s2" style="padding-top: 18px;">
-				<%= image_tag submission.image, :class => "responsive-img" %>
-			</div>
-		<div class="col s10">
-			<ul>
-				<li>Score: <%= Vote.where(:submission_id => submission.id).sum(:upvote) %></li>
-				<li><span class="flow-text"><%= link_to submission.title, submission_path(submission) %></span></li>
-				<li><span class="flow-text"><%= submission.description %></span></li>
-			</ul>
-		</div>
-	</div>
-<% end %> -->
-<%= @submissions.map do |submission| %>
+<% @submissions.map do |submission| %>
 	<div class="col s12 m7">
 	    <div class="card horizontal">
 	      <div class="card-image">
@@ -29,7 +13,7 @@
 	          <span class="flow-text"><h4><%= link_to submission.title, submission_path(submission) %></h4><%= submission.description %></span>
 	        </div>
 	        <div class="card-action">
-	          <%= link_to "click here", submission_path(submission) %>
+	          <%= link_to "click here", submission_path(submission) %>   <%= "Score: #{Vote.where(:submission_id => submission.id).sum(:upvote)}" %>
 	        </div>
 	      </div>
 	    </div>
