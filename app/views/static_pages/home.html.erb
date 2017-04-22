@@ -6,7 +6,7 @@
   </div>
 <% end %>
 
-<%= @submissions.map do |submission| %>
+<% @submissions.map do |submission| %>
 	<div class="col s12 m7">
 	   <div class="card horizontal">
 	      <div class="card-image">
@@ -27,12 +27,3 @@
 	    </div>
   </div>
 <% end %>
-
-<div id="user-widget">
-  <% if current_user %>
-    Welcome <strong><%= current_user.name %></strong>!
-    <%= link_to "Sign out", signout_path, id: "sign_out" %>
-  <% else %>
-    <p><%= link_to "Sign up now!", signup_path %></p>
-  <% end %>
-</div>
