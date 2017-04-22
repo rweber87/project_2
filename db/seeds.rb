@@ -12,5 +12,4 @@ urls.each do |url|
 		img = page.images.best
 		result = Submission.create({ title: result.title, url: result.link, description: Sanitize.clean(result.description.slice(0..200)), image: img })
 	end
-
 end
