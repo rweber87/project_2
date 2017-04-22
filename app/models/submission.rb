@@ -1,7 +1,7 @@
 class Submission < ActiveRecord::Base
 	belongs_to :user
 	has_many :comments
-	has_many :votes, as: :votable
+	has_many :votes
 
 	def total_upvotes
     votes.where(upvote: true).count - votes.where(upvote: false).count
@@ -19,5 +19,5 @@ class Submission < ActiveRecord::Base
       submission.update_score()
     end
   end
-	
+
 end

@@ -1,5 +1,5 @@
 class SubmissionsController < ApplicationController
-	before_filter :authorize, except: [:index, :show, :create, :destroy]
+	before_action :authorize, except: [:index, :show, :create, :destroy]
 
 	def index
 		@submissions = Submission.all.each_with_object({}) do |submission, new_hash|
