@@ -7,12 +7,8 @@
 </ul>
 
 <%= form_for @submission do |f| %>
-	<%= f.label :title %>:
-	<%= f.text_field :title %>
 	<%= f.label :url %>:
 	<%= f.text_field :url %>
-	<%= f.label :description %>:
-	<%= f.text_field :description %>
 	<p><%= f.submit :class => 'btn waves-effect waves-light' %></p>
 	<br>
 <% end %>

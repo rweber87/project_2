@@ -26,6 +26,8 @@ gem 'sanitize', '~> 4.4'
 
 gem 'ui_faces'
 
+gem 'mechanize', '~> 2.7', '>= 2.7.5'
+
 # gem 'factory-helper'
 gem 'faker'
 

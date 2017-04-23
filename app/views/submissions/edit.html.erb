@@ -9,9 +9,9 @@
 <%= form_for @submission do |f| %>
 	<%= f.label :title %>:
 	<%= f.text_field :title %>
-	<%= f.label :url %>:
-	<%= f.text_field :url %>
+	<%= f.label :url %>
+	<input disabled value="I am not editable" id="disabled" type="text" class="validate">
 	<%= f.label :description %>:
 	<%= f.text_field :description %>
-	<%= f.submit %>
+	<%= f.submit 'Update/Save'%>
 <% end %>
