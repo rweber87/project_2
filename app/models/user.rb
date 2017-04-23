@@ -3,4 +3,5 @@ class User < ApplicationRecord
   has_many :submissions
   has_many :votes
   has_secure_password
+  validates :image, :presence => true, :uniqueness => true
 end
