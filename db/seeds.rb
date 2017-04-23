@@ -1,15 +1,42 @@
-require 'rss'
-require 'open-uri'
-require 'rubygems'
-require 'sanitize'
+# SEED USERS
 
-urls = ['http://www.theonion.com/feeds/rss', 'http://nationalreport.net/feed/','http://www.thespoof.com/rss/feeds/frontpage/rss.xml', 'http://www.newsbiscuit.com/feed/', 'http://21stcenturywire.com/feed/']
+require 'ui_faces'
+require 'factory-helper'
+require 'faker'
 
-urls.each do |url|
-	rss = RSS::Parser.parse(open(url).read, false).items[0..50]
-	rss.each do |result|
-		page = MetaInspector.new(result.link)
-		img = page.images.best
-		result = Submission.create({ title: result.title, url: result.link, description: Sanitize.clean(result.description.slice(0..200)), image: img })
-	end
+def generate_gender
+  random_gender = Random.new.rand(0..1)
 end
+
+def male_or_female(binary)
+  binary == 0 ? "male" : 'female'
+end
+
+@gender = male_or_female(generate_gender)
+
+def male_name_or_female_name
+  if @gender == "male"
+    FactoryHelper::Name.male_first_name
+  elsif @gender == "female"
+    FactoryHelper::Name.female_first_name
+  end
+end
+
+User.create({
+	name: male_name_or_female_name,
+	username: FactoryHelper::Internet.user_name(male_name_or_female_name,
+	email: Faker::Internet.email(male_name_or_female_name),
+	password: FactoryHelper::Internet.password,
+	gender: @gender,
+	image: UiFaces.sex(@gender),
+	city: FactoryHelper::Address.city,
+	zip: FactoryHelper::Address.zip,
+	book_genre: Faker::Book.genre,
+	chuck_norris_fact: Faker::ChuckNorris.fact,
+	favorite_beer_name: Faker::Beer.name,
+	favorite_food: Faker::Food.ingredient,
+	gameofthrones_house: Faker::GameOfThrones.house,
+	harry_potter_location: Faker::HarryPotter.location,
+	best_skill_in_life: Faker::Job.key_skill,
+	planet_of_origin: Faker::Space.planet
+	})
