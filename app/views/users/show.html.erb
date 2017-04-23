@@ -1,7 +1,10 @@
 <div>
+
   <aside>
+
     <section>
-      <h1><%= @user.username.split.map(&:capitalize).join(' ') %></h1>
+      <h1>Name: <%= @user.name %></h1>
+      <h2>Username: <%= @user.username %></h2>
       <div class="left" style="margin-right:10px;">
         <%= link_to 'Edit', edit_user_path, :class => 'btn waves-effect waves-light' %>
       </div>
@@ -10,8 +13,13 @@
       </div>
       <h2>link points: 0</h2>
     </section>
+    <section>
+
+    </section>
   </aside>
+
   <aside>
+
     <section>
       <h1>Posts</h1>
       <section>

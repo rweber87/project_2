@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170420193328) do
+ActiveRecord::Schema.define(version: 20170423035044) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -37,14 +37,24 @@ ActiveRecord::Schema.define(version: 20170420193328) do
   create_table "users", force: :cascade do |t|
     t.string   "username"
     t.string   "password_digest"
-    t.datetime "created_at",       null: false
-    t.datetime "updated_at",       null: false
-    t.string   "Users"
-    t.string   "provider"
-    t.string   "uid"
+    t.datetime "created_at",                        null: false
+    t.datetime "updated_at",                        null: false
+    t.string   "gender"
+    t.string   "email"
+    t.string   "password"
+    t.string   "image"
+    t.string   "city"
+    t.string   "zip"
+    t.string   "book_genre"
+    t.string   "chuck_norris_fact"
+    t.string   "beer_name"
+    t.string   "food_ingredient"
+    t.string   "gameofthrones_house"
+    t.string   "harry_potter_location"
+    t.string   "job_key_skill"
+    t.string   "space_planet"
     t.string   "name"
-    t.string   "oauth_token"
-    t.datetime "oauth_expires_at"
+    t.integer  "user_score",            default: 0
   end
 
   create_table "votes", force: :cascade do |t|

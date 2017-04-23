@@ -1,6 +1,15 @@
-<h1>All Users</h1>
-<ul>
-  <% @users.each do |user| %>
-  <li><%= link_to(user.username.split.map(&:capitalize).join(' '), user_path(user)) %></li>
-  <% end %>
+<h1>Informed Members</h1>
+<% @users.each do |user| %>
+<ul class="collection">
+  <li class="collection-item avatar">
+    <%= image_tag("#{user.image}", :class => "circle") %>
+    <%= link_to(user.name, "/users/#{user.id}", :class => "title") %>
+    <p>
+    City: <%= user.city %>
+      <br>
+    Score: <%= user.user_score %>
+    </p>
+    <%= link_to('View Profile', "/users/#{user.id}", :class => 'secondary-content btn waves-effect waves-light') %>
+  </li>
 </ul>
+<% end %>

@@ -3,6 +3,10 @@
   <br>
   <%= form_for(@user) do |f| %>
     <p>
+      <i class="material-icons prefix">account_circle</i><%= f.label :name, :style => 'margin-left:5px;font-size:28px;' %>
+      <%= f.text_field :name %>
+    </p>
+    <p>
       <i class="material-icons prefix">account_circle</i><%= f.label :username, :style => 'margin-left:5px;font-size:28px;' %>
       <%= f.text_field :username %>
     </p>

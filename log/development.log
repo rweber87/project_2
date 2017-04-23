@@ -2,10 +2,9 @@ Started GET "/submissions/460" for ::1 at 2017-04-21 18:41:38 -0400
   [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
   
 SyntaxError (/Users/davidmieloch/dev/project_2/app/helpers/votes_helper.rb:3: syntax error, unexpected <<, expecting keyword_end
-<<<<<<< HEAD
-  ^
+
 /Users/davidmieloch/dev/project_2/app/helpers/votes_helper.rb:15: syntax error, unexpected >>, expecting keyword_end
->>>>>>> master
+
   ^):
   
 app/helpers/votes_helper.rb:3: syntax error, unexpected <<, expecting keyword_end
@@ -23,10 +22,9 @@ app/controllers/submissions_controller.rb:1:in `<top (required)>'
 Started GET "/submissions/460" for ::1 at 2017-04-21 18:43:02 -0400
   
 SyntaxError (/Users/davidmieloch/dev/project_2/app/helpers/votes_helper.rb:3: syntax error, unexpected <<, expecting keyword_end
-<<<<<<< HEAD
-  ^
+
 /Users/davidmieloch/dev/project_2/app/helpers/votes_helper.rb:15: syntax error, unexpected >>, expecting keyword_end
->>>>>>> master
+
   ^):
   
 app/helpers/votes_helper.rb:3: syntax error, unexpected <<, expecting keyword_end
