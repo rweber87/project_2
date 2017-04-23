@@ -47,6 +47,7 @@ class UsersController < ApplicationController
 
   def user_params
     params.require(:user).permit(
+    :name,
     :username,
     :password,
     :password_confirmation,
@@ -64,7 +65,6 @@ class UsersController < ApplicationController
     :job_key_skill,
     :space_planet
     )
-
   end
 
 end
