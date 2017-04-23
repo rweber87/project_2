@@ -46,7 +46,25 @@ class UsersController < ApplicationController
   end
 
   def user_params
-    params.require(:user).permit(:username, :password, :password_confirmation)
+    params.require(:user).permit(
+    :username,
+    :password,
+    :password_confirmation,
+    :gender,
+    :email,
+    :image,
+    :city,
+    :zip,
+    :book_genre,
+    :chuck_norris_fact,
+    :beer_name,
+    :food_ingredient,
+    :gameofthrones_house,
+    :harry_potter_location,
+    :job_key_skill,
+    :space_planet
+    )
+
   end
 
 end

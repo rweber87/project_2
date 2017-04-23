@@ -24,6 +24,10 @@ gem 'coffee-rails', '~> 4.2'
 
 gem 'sanitize', '~> 4.4'
 
+gem 'ui_faces'
+
+gem 'factory-helper'
+
 gem 'metainspector'
 
 gem 'link_preview', '~> 0.3.5'
