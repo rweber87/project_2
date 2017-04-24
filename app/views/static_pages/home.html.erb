@@ -23,7 +23,6 @@
 	        <div class="card-action">
 	          <%= link_to "click here", submission_path(submission) %>  <%= "Score: #{Vote.where(:submission_id => submission.id).sum(:upvote)}" %>
 	        </div>
-	      </div>
 	    </div>
   </div>
 <% end %>

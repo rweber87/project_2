@@ -1,6 +1,6 @@
 <header>
 <div class="container">
-<nav class="nav-extended">
+<nav class="nav-extended light-green darken-4">
    <div class="nav-wrapper">
      <%= link_to "ADDICTME", root_path, :class => 'brand-logo' %>
      <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
@@ -13,19 +13,20 @@
                 <input name="authenticity_token" type="hidden" value="submissions_post_action_token">
              </form>
            </li>
-         <li><i class="material-icons">perm_identity</i></li>
-         <li><%= link_to "Account (#{current_user.username})", current_user %></li>
+          <li><%= link_to "Sign out", signout_path, method: :delete, :class => 'btn waves-effect waves-light' %></li>
       </ul>
      <% else %>
     <div>
       <div class="right"><%= button_to "Log in", login_path, :class => 'btn waves-effect waves-light right', :style => 'margin-top:40px;margin-right:25px;' %></div>
-      <!-- <div class=""><%= link_to "Sign up!", signup_path, :class => 'btn waves-effect waves-light right' %></div> -->
+      <div><%= link_to "Sign up!", signup_path, :class => 'btn waves-effect waves-light right' %></div>
     </div>
     <% end %>
 
    </div>
    <div class="nav-content">
      <ul class="tabs tabs-transparent">
+       <li><i class="material-icons">perm_identity</i></li>
+       <li><%= link_to "Account (#{current_user.username})", current_user %></li>
        <li class="tab"><%= link_to "Current Events", submissions_path %></li>
        <li class="tab"><%= link_to "Informed Members", users_path %></li>
      </ul>
