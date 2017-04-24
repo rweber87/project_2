@@ -25283,3 +25283,847 @@ puma (3.8.2) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
   Rendering /Users/davidmieloch/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
   Rendered /Users/davidmieloch/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
   Rendered /Users/davidmieloch/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (70.9ms)
+Started GET "/" for ::1 at 2017-04-23 21:18:32 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by StaticPagesController#home as HTML
+  [1m[36mSubmission Load (1.1ms)[0m  [1m[34mSELECT "submissions".* FROM "submissions"[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 1]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 2]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 3]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 4]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 5]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 6]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 7]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 8]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 9]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 10]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 11]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 12]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 13]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 14]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 15]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 16]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 17]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 18]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 19]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 20]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 21]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 22]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 23]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 24]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 25]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 26]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 27]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 28]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 29]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 30]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 31]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 32]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 33]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 34]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 36]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 37]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 38]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 39]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 40]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 41]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 42]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 43]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 44]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 45]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 46]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 47]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 48]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 50]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 52]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 53]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 54]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 55]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 56]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 57]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 58]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 59]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 60]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 61]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 62]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 63]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 64]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 65]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 66]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 67]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 68]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 69]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 70]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 71]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 72]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 73]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 74]]
+  [1m[36mSubmission Load (0.4ms)[0m  [1m[34mSELECT  "submissions".* FROM "submissions" WHERE "submissions"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mSubmission Load (0.3ms)[0m  [1m[34mSELECT  "submissions".* FROM "submissions" WHERE "submissions"."id" = $1 LIMIT $2[0m  [["id", 73], ["LIMIT", 1]]
+  [1m[36mSubmission Load (0.3ms)[0m  [1m[34mSELECT  "submissions".* FROM "submissions" WHERE "submissions"."id" = $1 LIMIT $2[0m  [["id", 72], ["LIMIT", 1]]
+  [1m[36mSubmission Load (0.3ms)[0m  [1m[34mSELECT  "submissions".* FROM "submissions" WHERE "submissions"."id" = $1 LIMIT $2[0m  [["id", 71], ["LIMIT", 1]]
+  [1m[36mSubmission Load (0.3ms)[0m  [1m[34mSELECT  "submissions".* FROM "submissions" WHERE "submissions"."id" = $1 LIMIT $2[0m  [["id", 70], ["LIMIT", 1]]
+  [1m[36mSubmission Load (0.3ms)[0m  [1m[34mSELECT  "submissions".* FROM "submissions" WHERE "submissions"."id" = $1 LIMIT $2[0m  [["id", 69], ["LIMIT", 1]]
+  [1m[36mSubmission Load (0.2ms)[0m  [1m[34mSELECT  "submissions".* FROM "submissions" WHERE "submissions"."id" = $1 LIMIT $2[0m  [["id", 68], ["LIMIT", 1]]
+  [1m[36mSubmission Load (0.2ms)[0m  [1m[34mSELECT  "submissions".* FROM "submissions" WHERE "submissions"."id" = $1 LIMIT $2[0m  [["id", 67], ["LIMIT", 1]]
+  [1m[36mSubmission Load (0.2ms)[0m  [1m[34mSELECT  "submissions".* FROM "submissions" WHERE "submissions"."id" = $1 LIMIT $2[0m  [["id", 66], ["LIMIT", 1]]
+  [1m[36mSubmission Load (0.2ms)[0m  [1m[34mSELECT  "submissions".* FROM "submissions" WHERE "submissions"."id" = $1 LIMIT $2[0m  [["id", 65], ["LIMIT", 1]]
+  [1m[36mSubmission Load (0.2ms)[0m  [1m[34mSELECT  "submissions".* FROM "submissions" WHERE "submissions"."id" = $1 LIMIT $2[0m  [["id", 64], ["LIMIT", 1]]
+  [1m[36mSubmission Load (0.2ms)[0m  [1m[34mSELECT  "submissions".* FROM "submissions" WHERE "submissions"."id" = $1 LIMIT $2[0m  [["id", 63], ["LIMIT", 1]]
+  [1m[36mSubmission Load (0.1ms)[0m  [1m[34mSELECT  "submissions".* FROM "submissions" WHERE "submissions"."id" = $1 LIMIT $2[0m  [["id", 62], ["LIMIT", 1]]
+  [1m[36mSubmission Load (0.2ms)[0m  [1m[34mSELECT  "submissions".* FROM "submissions" WHERE "submissions"."id" = $1 LIMIT $2[0m  [["id", 61], ["LIMIT", 1]]
+  [1m[36mSubmission Load (0.2ms)[0m  [1m[34mSELECT  "submissions".* FROM "submissions" WHERE "submissions"."id" = $1 LIMIT $2[0m  [["id", 60], ["LIMIT", 1]]
+  [1m[36mSubmission Load (0.2ms)[0m  [1m[34mSELECT  "submissions".* FROM "submissions" WHERE "submissions"."id" = $1 LIMIT $2[0m  [["id", 59], ["LIMIT", 1]]
+  [1m[36mSubmission Load (0.1ms)[0m  [1m[34mSELECT  "submissions".* FROM "submissions" WHERE "submissions"."id" = $1 LIMIT $2[0m  [["id", 58], ["LIMIT", 1]]
+  [1m[36mSubmission Load (0.2ms)[0m  [1m[34mSELECT  "submissions".* FROM "submissions" WHERE "submissions"."id" = $1 LIMIT $2[0m  [["id", 57], ["LIMIT", 1]]
+  [1m[36mSubmission Load (0.2ms)[0m  [1m[34mSELECT  "submissions".* FROM "submissions" WHERE "submissions"."id" = $1 LIMIT $2[0m  [["id", 56], ["LIMIT", 1]]
+  [1m[36mSubmission Load (0.1ms)[0m  [1m[34mSELECT  "submissions".* FROM "submissions" WHERE "submissions"."id" = $1 LIMIT $2[0m  [["id", 55], ["LIMIT", 1]]
+  [1m[36mSubmission Load (0.2ms)[0m  [1m[34mSELECT  "submissions".* FROM "submissions" WHERE "submissions"."id" = $1 LIMIT $2[0m  [["id", 54], ["LIMIT", 1]]
+  [1m[36mSubmission Load (0.1ms)[0m  [1m[34mSELECT  "submissions".* FROM "submissions" WHERE "submissions"."id" = $1 LIMIT $2[0m  [["id", 53], ["LIMIT", 1]]
+  [1m[36mSubmission Load (0.2ms)[0m  [1m[34mSELECT  "submissions".* FROM "submissions" WHERE "submissions"."id" = $1 LIMIT $2[0m  [["id", 52], ["LIMIT", 1]]
+  [1m[36mSubmission Load (0.1ms)[0m  [1m[34mSELECT  "submissions".* FROM "submissions" WHERE "submissions"."id" = $1 LIMIT $2[0m  [["id", 50], ["LIMIT", 1]]
+  [1m[36mSubmission Load (0.2ms)[0m  [1m[34mSELECT  "submissions".* FROM "submissions" WHERE "submissions"."id" = $1 LIMIT $2[0m  [["id", 48], ["LIMIT", 1]]
+  [1m[36mSubmission Load (0.1ms)[0m  [1m[34mSELECT  "submissions".* FROM "submissions" WHERE "submissions"."id" = $1 LIMIT $2[0m  [["id", 47], ["LIMIT", 1]]
+  [1m[36mSubmission Load (0.2ms)[0m  [1m[34mSELECT  "submissions".* FROM "submissions" WHERE "submissions"."id" = $1 LIMIT $2[0m  [["id", 46], ["LIMIT", 1]]
+  [1m[36mSubmission Load (0.1ms)[0m  [1m[34mSELECT  "submissions".* FROM "submissions" WHERE "submissions"."id" = $1 LIMIT $2[0m  [["id", 45], ["LIMIT", 1]]
+  [1m[36mSubmission Load (0.2ms)[0m  [1m[34mSELECT  "submissions".* FROM "submissions" WHERE "submissions"."id" = $1 LIMIT $2[0m  [["id", 44], ["LIMIT", 1]]
+  [1m[36mSubmission Load (0.2ms)[0m  [1m[34mSELECT  "submissions".* FROM "submissions" WHERE "submissions"."id" = $1 LIMIT $2[0m  [["id", 43], ["LIMIT", 1]]
+  [1m[36mSubmission Load (0.2ms)[0m  [1m[34mSELECT  "submissions".* FROM "submissions" WHERE "submissions"."id" = $1 LIMIT $2[0m  [["id", 42], ["LIMIT", 1]]
+  [1m[36mSubmission Load (0.1ms)[0m  [1m[34mSELECT  "submissions".* FROM "submissions" WHERE "submissions"."id" = $1 LIMIT $2[0m  [["id", 41], ["LIMIT", 1]]
+  [1m[36mSubmission Load (0.2ms)[0m  [1m[34mSELECT  "submissions".* FROM "submissions" WHERE "submissions"."id" = $1 LIMIT $2[0m  [["id", 40], ["LIMIT", 1]]
+  [1m[36mSubmission Load (0.3ms)[0m  [1m[34mSELECT  "submissions".* FROM "submissions" WHERE "submissions"."id" = $1 LIMIT $2[0m  [["id", 39], ["LIMIT", 1]]
+  [1m[36mSubmission Load (0.2ms)[0m  [1m[34mSELECT  "submissions".* FROM "submissions" WHERE "submissions"."id" = $1 LIMIT $2[0m  [["id", 38], ["LIMIT", 1]]
+  [1m[36mSubmission Load (0.2ms)[0m  [1m[34mSELECT  "submissions".* FROM "submissions" WHERE "submissions"."id" = $1 LIMIT $2[0m  [["id", 37], ["LIMIT", 1]]
+  [1m[36mSubmission Load (0.2ms)[0m  [1m[34mSELECT  "submissions".* FROM "submissions" WHERE "submissions"."id" = $1 LIMIT $2[0m  [["id", 36], ["LIMIT", 1]]
+  [1m[36mSubmission Load (0.2ms)[0m  [1m[34mSELECT  "submissions".* FROM "submissions" WHERE "submissions"."id" = $1 LIMIT $2[0m  [["id", 34], ["LIMIT", 1]]
+  [1m[36mSubmission Load (0.3ms)[0m  [1m[34mSELECT  "submissions".* FROM "submissions" WHERE "submissions"."id" = $1 LIMIT $2[0m  [["id", 33], ["LIMIT", 1]]
+  [1m[36mSubmission Load (0.2ms)[0m  [1m[34mSELECT  "submissions".* FROM "submissions" WHERE "submissions"."id" = $1 LIMIT $2[0m  [["id", 32], ["LIMIT", 1]]
+  [1m[36mSubmission Load (0.1ms)[0m  [1m[34mSELECT  "submissions".* FROM "submissions" WHERE "submissions"."id" = $1 LIMIT $2[0m  [["id", 31], ["LIMIT", 1]]
+  [1m[36mSubmission Load (0.2ms)[0m  [1m[34mSELECT  "submissions".* FROM "submissions" WHERE "submissions"."id" = $1 LIMIT $2[0m  [["id", 30], ["LIMIT", 1]]
+  [1m[36mSubmission Load (0.2ms)[0m  [1m[34mSELECT  "submissions".* FROM "submissions" WHERE "submissions"."id" = $1 LIMIT $2[0m  [["id", 29], ["LIMIT", 1]]
+  [1m[36mSubmission Load (0.2ms)[0m  [1m[34mSELECT  "submissions".* FROM "submissions" WHERE "submissions"."id" = $1 LIMIT $2[0m  [["id", 28], ["LIMIT", 1]]
+  [1m[36mSubmission Load (0.2ms)[0m  [1m[34mSELECT  "submissions".* FROM "submissions" WHERE "submissions"."id" = $1 LIMIT $2[0m  [["id", 27], ["LIMIT", 1]]
+  [1m[36mSubmission Load (0.2ms)[0m  [1m[34mSELECT  "submissions".* FROM "submissions" WHERE "submissions"."id" = $1 LIMIT $2[0m  [["id", 26], ["LIMIT", 1]]
+  [1m[36mSubmission Load (0.2ms)[0m  [1m[34mSELECT  "submissions".* FROM "submissions" WHERE "submissions"."id" = $1 LIMIT $2[0m  [["id", 25], ["LIMIT", 1]]
+  [1m[36mSubmission Load (0.2ms)[0m  [1m[34mSELECT  "submissions".* FROM "submissions" WHERE "submissions"."id" = $1 LIMIT $2[0m  [["id", 24], ["LIMIT", 1]]
+  [1m[36mSubmission Load (0.2ms)[0m  [1m[34mSELECT  "submissions".* FROM "submissions" WHERE "submissions"."id" = $1 LIMIT $2[0m  [["id", 23], ["LIMIT", 1]]
+  [1m[36mSubmission Load (0.1ms)[0m  [1m[34mSELECT  "submissions".* FROM "submissions" WHERE "submissions"."id" = $1 LIMIT $2[0m  [["id", 22], ["LIMIT", 1]]
+  [1m[36mSubmission Load (0.2ms)[0m  [1m[34mSELECT  "submissions".* FROM "submissions" WHERE "submissions"."id" = $1 LIMIT $2[0m  [["id", 21], ["LIMIT", 1]]
+  [1m[36mSubmission Load (0.1ms)[0m  [1m[34mSELECT  "submissions".* FROM "submissions" WHERE "submissions"."id" = $1 LIMIT $2[0m  [["id", 20], ["LIMIT", 1]]
+  [1m[36mSubmission Load (0.1ms)[0m  [1m[34mSELECT  "submissions".* FROM "submissions" WHERE "submissions"."id" = $1 LIMIT $2[0m  [["id", 19], ["LIMIT", 1]]
+  [1m[36mSubmission Load (0.2ms)[0m  [1m[34mSELECT  "submissions".* FROM "submissions" WHERE "submissions"."id" = $1 LIMIT $2[0m  [["id", 18], ["LIMIT", 1]]
+  [1m[36mSubmission Load (0.1ms)[0m  [1m[34mSELECT  "submissions".* FROM "submissions" WHERE "submissions"."id" = $1 LIMIT $2[0m  [["id", 17], ["LIMIT", 1]]
+  [1m[36mSubmission Load (0.1ms)[0m  [1m[34mSELECT  "submissions".* FROM "submissions" WHERE "submissions"."id" = $1 LIMIT $2[0m  [["id", 16], ["LIMIT", 1]]
+  [1m[36mSubmission Load (0.2ms)[0m  [1m[34mSELECT  "submissions".* FROM "submissions" WHERE "submissions"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  [1m[36mSubmission Load (0.1ms)[0m  [1m[34mSELECT  "submissions".* FROM "submissions" WHERE "submissions"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+  [1m[36mSubmission Load (0.2ms)[0m  [1m[34mSELECT  "submissions".* FROM "submissions" WHERE "submissions"."id" = $1 LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  [1m[36mSubmission Load (0.2ms)[0m  [1m[34mSELECT  "submissions".* FROM "submissions" WHERE "submissions"."id" = $1 LIMIT $2[0m  [["id", 12], ["LIMIT", 1]]
+  [1m[36mSubmission Load (0.2ms)[0m  [1m[34mSELECT  "submissions".* FROM "submissions" WHERE "submissions"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  [1m[36mSubmission Load (0.3ms)[0m  [1m[34mSELECT  "submissions".* FROM "submissions" WHERE "submissions"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  [1m[36mSubmission Load (0.2ms)[0m  [1m[34mSELECT  "submissions".* FROM "submissions" WHERE "submissions"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  [1m[36mSubmission Load (0.3ms)[0m  [1m[34mSELECT  "submissions".* FROM "submissions" WHERE "submissions"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  [1m[36mSubmission Load (0.3ms)[0m  [1m[34mSELECT  "submissions".* FROM "submissions" WHERE "submissions"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  [1m[36mSubmission Load (0.2ms)[0m  [1m[34mSELECT  "submissions".* FROM "submissions" WHERE "submissions"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[36mSubmission Load (0.2ms)[0m  [1m[34mSELECT  "submissions".* FROM "submissions" WHERE "submissions"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[36mSubmission Load (0.2ms)[0m  [1m[34mSELECT  "submissions".* FROM "submissions" WHERE "submissions"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mSubmission Load (0.2ms)[0m  [1m[34mSELECT  "submissions".* FROM "submissions" WHERE "submissions"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mSubmission Load (0.2ms)[0m  [1m[34mSELECT  "submissions".* FROM "submissions" WHERE "submissions"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mSubmission Load (0.3ms)[0m  [1m[34mSELECT  "submissions".* FROM "submissions" WHERE "submissions"."id" = $1 LIMIT $2[0m  [["id", 74], ["LIMIT", 1]]
+  Rendering static_pages/home.html.erb within layouts/application
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 1]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 73]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 72]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 71]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 70]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 69]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 68]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 67]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 66]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 65]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 64]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 63]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 62]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 61]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 60]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 59]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 58]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 57]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 56]]
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 55]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 54]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 53]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 52]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 50]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 48]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 47]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 46]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 45]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 44]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 43]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 42]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 41]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 40]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 39]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 38]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 37]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 36]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 34]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 33]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 32]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 31]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 30]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 29]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 28]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 27]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 26]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 25]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 24]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 23]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 22]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 21]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 20]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 19]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 18]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 17]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 16]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 15]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 14]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 13]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 12]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 11]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 10]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 9]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 8]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 7]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 6]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 5]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 4]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 3]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 2]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 74]]
+  Rendered static_pages/home.html.erb within layouts/application (76.2ms)
+  Rendered layouts/_shim.html.erb (338.5ms)
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 24], ["LIMIT", 1]]
+  Rendered layouts/_header.html.erb (422.9ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 980ms (Views: 835.7ms | ActiveRecord: 56.4ms)
+
+
+Started GET "/stylesheets/materialize.min.css" for ::1 at 2017-04-23 21:18:34 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/stylesheets/materialize.min.css"):
+  
+actionpack (5.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.5.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.0) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.0) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.2) lib/rails/engine.rb:522:in `call'
+puma (3.8.2) lib/puma/configuration.rb:224:in `call'
+puma (3.8.2) lib/puma/server.rb:600:in `handle_request'
+puma (3.8.2) lib/puma/server.rb:435:in `process_client'
+puma (3.8.2) lib/puma/server.rb:299:in `block in run'
+puma (3.8.2) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+  Rendering /Users/davidmieloch/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /Users/davidmieloch/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/davidmieloch/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendered collection of /Users/davidmieloch/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/routes/_route.html.erb [23 times] (8.7ms)
+  Rendered /Users/davidmieloch/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.6ms)
+  Rendering /Users/davidmieloch/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/davidmieloch/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /Users/davidmieloch/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (114.8ms)
+Started GET "/users/24" for ::1 at 2017-04-23 21:18:40 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"24"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 24], ["LIMIT", 1]]
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 24], ["LIMIT", 1]]
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mSubmission Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM "submissions" WHERE "submissions"."user_id" = $1 LIMIT $2[0m  [["user_id", 24], ["LIMIT", 1]]
+  [1m[36mSubmission Load (0.3ms)[0m  [1m[34mSELECT "submissions".* FROM "submissions" WHERE "submissions"."user_id" = $1[0m  [["user_id", 24]]
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 72]]
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 73]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 74]]
+  [1m[36mComment Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM "comments" WHERE "comments"."user_id" = $1 LIMIT $2[0m  [["user_id", 24], ["LIMIT", 1]]
+  [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."user_id" = $1[0m  [["user_id", 24]]
+  [1m[36mSubmission Load (0.3ms)[0m  [1m[34mSELECT  "submissions".* FROM "submissions" WHERE "submissions"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mSubmission Load (0.2ms)[0m  [1m[34mSELECT  "submissions".* FROM "submissions" WHERE "submissions"."id" = $1 LIMIT $2[0m  [["id", 68], ["LIMIT", 1]]
+  [1m[36mSubmission Load (0.2ms)[0m  [1m[34mSELECT  "submissions".* FROM "submissions" WHERE "submissions"."id" = $1 LIMIT $2[0m  [["id", 64], ["LIMIT", 1]]
+  [1m[36mSubmission Load (0.2ms)[0m  [1m[34mSELECT  "submissions".* FROM "submissions" WHERE "submissions"."id" = $1 LIMIT $2[0m  [["id", 72], ["LIMIT", 1]]
+  [1m[36mSubmission Load (0.2ms)[0m  [1m[34mSELECT  "submissions".* FROM "submissions" WHERE "submissions"."id" = $1 LIMIT $2[0m  [["id", 74], ["LIMIT", 1]]
+  Rendered users/show.html.erb within layouts/application (53.4ms)
+  Rendered layouts/_shim.html.erb (21.8ms)
+  Rendered layouts/_header.html.erb (1.6ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 87ms (Views: 76.4ms | ActiveRecord: 8.3ms)
+
+
+Started GET "/" for ::1 at 2017-04-23 21:21:00 -0400
+Processing by StaticPagesController#home as HTML
+  [1m[36mSubmission Load (0.7ms)[0m  [1m[34mSELECT "submissions".* FROM "submissions"[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 1]]
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 2]]
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 3]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 4]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 5]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 6]]
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 7]]
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 8]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 9]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 10]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 11]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 12]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 13]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 14]]
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 15]]
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 16]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 17]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 18]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 19]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 20]]
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 21]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 22]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 23]]
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 24]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 25]]
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 26]]
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 27]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 28]]
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 29]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 30]]
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 31]]
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 32]]
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 33]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 34]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 36]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 37]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 38]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 39]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 40]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 41]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 42]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 43]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 44]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 45]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 46]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 47]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 48]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 50]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 52]]
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 53]]
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 54]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 55]]
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 56]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 57]]
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 58]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 59]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 60]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 61]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 62]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 63]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 64]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 65]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 66]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 67]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 68]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 69]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 70]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 71]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 72]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 73]]
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 74]]
+  [1m[36mSubmission Load (0.3ms)[0m  [1m[34mSELECT  "submissions".* FROM "submissions" WHERE "submissions"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mSubmission Load (0.2ms)[0m  [1m[34mSELECT  "submissions".* FROM "submissions" WHERE "submissions"."id" = $1 LIMIT $2[0m  [["id", 73], ["LIMIT", 1]]
+  [1m[36mSubmission Load (0.2ms)[0m  [1m[34mSELECT  "submissions".* FROM "submissions" WHERE "submissions"."id" = $1 LIMIT $2[0m  [["id", 72], ["LIMIT", 1]]
+  [1m[36mSubmission Load (0.1ms)[0m  [1m[34mSELECT  "submissions".* FROM "submissions" WHERE "submissions"."id" = $1 LIMIT $2[0m  [["id", 71], ["LIMIT", 1]]
+  [1m[36mSubmission Load (0.2ms)[0m  [1m[34mSELECT  "submissions".* FROM "submissions" WHERE "submissions"."id" = $1 LIMIT $2[0m  [["id", 70], ["LIMIT", 1]]
+  [1m[36mSubmission Load (0.2ms)[0m  [1m[34mSELECT  "submissions".* FROM "submissions" WHERE "submissions"."id" = $1 LIMIT $2[0m  [["id", 69], ["LIMIT", 1]]
+  [1m[36mSubmission Load (0.2ms)[0m  [1m[34mSELECT  "submissions".* FROM "submissions" WHERE "submissions"."id" = $1 LIMIT $2[0m  [["id", 68], ["LIMIT", 1]]
+  [1m[36mSubmission Load (0.2ms)[0m  [1m[34mSELECT  "submissions".* FROM "submissions" WHERE "submissions"."id" = $1 LIMIT $2[0m  [["id", 67], ["LIMIT", 1]]
+  [1m[36mSubmission Load (0.2ms)[0m  [1m[34mSELECT  "submissions".* FROM "submissions" WHERE "submissions"."id" = $1 LIMIT $2[0m  [["id", 66], ["LIMIT", 1]]
+  [1m[36mSubmission Load (0.2ms)[0m  [1m[34mSELECT  "submissions".* FROM "submissions" WHERE "submissions"."id" = $1 LIMIT $2[0m  [["id", 65], ["LIMIT", 1]]
+  [1m[36mSubmission Load (0.2ms)[0m  [1m[34mSELECT  "submissions".* FROM "submissions" WHERE "submissions"."id" = $1 LIMIT $2[0m  [["id", 64], ["LIMIT", 1]]
+  [1m[36mSubmission Load (0.2ms)[0m  [1m[34mSELECT  "submissions".* FROM "submissions" WHERE "submissions"."id" = $1 LIMIT $2[0m  [["id", 63], ["LIMIT", 1]]
+  [1m[36mSubmission Load (0.2ms)[0m  [1m[34mSELECT  "submissions".* FROM "submissions" WHERE "submissions"."id" = $1 LIMIT $2[0m  [["id", 62], ["LIMIT", 1]]
+  [1m[36mSubmission Load (0.2ms)[0m  [1m[34mSELECT  "submissions".* FROM "submissions" WHERE "submissions"."id" = $1 LIMIT $2[0m  [["id", 61], ["LIMIT", 1]]
+  [1m[36mSubmission Load (0.1ms)[0m  [1m[34mSELECT  "submissions".* FROM "submissions" WHERE "submissions"."id" = $1 LIMIT $2[0m  [["id", 60], ["LIMIT", 1]]
+  [1m[36mSubmission Load (0.2ms)[0m  [1m[34mSELECT  "submissions".* FROM "submissions" WHERE "submissions"."id" = $1 LIMIT $2[0m  [["id", 59], ["LIMIT", 1]]
+  [1m[36mSubmission Load (0.2ms)[0m  [1m[34mSELECT  "submissions".* FROM "submissions" WHERE "submissions"."id" = $1 LIMIT $2[0m  [["id", 58], ["LIMIT", 1]]
+  [1m[36mSubmission Load (0.2ms)[0m  [1m[34mSELECT  "submissions".* FROM "submissions" WHERE "submissions"."id" = $1 LIMIT $2[0m  [["id", 57], ["LIMIT", 1]]
+  [1m[36mSubmission Load (0.2ms)[0m  [1m[34mSELECT  "submissions".* FROM "submissions" WHERE "submissions"."id" = $1 LIMIT $2[0m  [["id", 56], ["LIMIT", 1]]
+  [1m[36mSubmission Load (0.2ms)[0m  [1m[34mSELECT  "submissions".* FROM "submissions" WHERE "submissions"."id" = $1 LIMIT $2[0m  [["id", 55], ["LIMIT", 1]]
+  [1m[36mSubmission Load (0.2ms)[0m  [1m[34mSELECT  "submissions".* FROM "submissions" WHERE "submissions"."id" = $1 LIMIT $2[0m  [["id", 54], ["LIMIT", 1]]
+  [1m[36mSubmission Load (0.1ms)[0m  [1m[34mSELECT  "submissions".* FROM "submissions" WHERE "submissions"."id" = $1 LIMIT $2[0m  [["id", 53], ["LIMIT", 1]]
+  [1m[36mSubmission Load (0.2ms)[0m  [1m[34mSELECT  "submissions".* FROM "submissions" WHERE "submissions"."id" = $1 LIMIT $2[0m  [["id", 52], ["LIMIT", 1]]
+  [1m[36mSubmission Load (0.2ms)[0m  [1m[34mSELECT  "submissions".* FROM "submissions" WHERE "submissions"."id" = $1 LIMIT $2[0m  [["id", 50], ["LIMIT", 1]]
+  [1m[36mSubmission Load (0.2ms)[0m  [1m[34mSELECT  "submissions".* FROM "submissions" WHERE "submissions"."id" = $1 LIMIT $2[0m  [["id", 48], ["LIMIT", 1]]
+  [1m[36mSubmission Load (0.2ms)[0m  [1m[34mSELECT  "submissions".* FROM "submissions" WHERE "submissions"."id" = $1 LIMIT $2[0m  [["id", 47], ["LIMIT", 1]]
+  [1m[36mSubmission Load (0.1ms)[0m  [1m[34mSELECT  "submissions".* FROM "submissions" WHERE "submissions"."id" = $1 LIMIT $2[0m  [["id", 46], ["LIMIT", 1]]
+  [1m[36mSubmission Load (0.3ms)[0m  [1m[34mSELECT  "submissions".* FROM "submissions" WHERE "submissions"."id" = $1 LIMIT $2[0m  [["id", 45], ["LIMIT", 1]]
+  [1m[36mSubmission Load (0.2ms)[0m  [1m[34mSELECT  "submissions".* FROM "submissions" WHERE "submissions"."id" = $1 LIMIT $2[0m  [["id", 44], ["LIMIT", 1]]
+  [1m[36mSubmission Load (0.3ms)[0m  [1m[34mSELECT  "submissions".* FROM "submissions" WHERE "submissions"."id" = $1 LIMIT $2[0m  [["id", 43], ["LIMIT", 1]]
+  [1m[36mSubmission Load (0.2ms)[0m  [1m[34mSELECT  "submissions".* FROM "submissions" WHERE "submissions"."id" = $1 LIMIT $2[0m  [["id", 42], ["LIMIT", 1]]
+  [1m[36mSubmission Load (0.3ms)[0m  [1m[34mSELECT  "submissions".* FROM "submissions" WHERE "submissions"."id" = $1 LIMIT $2[0m  [["id", 41], ["LIMIT", 1]]
+  [1m[36mSubmission Load (0.3ms)[0m  [1m[34mSELECT  "submissions".* FROM "submissions" WHERE "submissions"."id" = $1 LIMIT $2[0m  [["id", 40], ["LIMIT", 1]]
+  [1m[36mSubmission Load (0.2ms)[0m  [1m[34mSELECT  "submissions".* FROM "submissions" WHERE "submissions"."id" = $1 LIMIT $2[0m  [["id", 39], ["LIMIT", 1]]
+  [1m[36mSubmission Load (0.2ms)[0m  [1m[34mSELECT  "submissions".* FROM "submissions" WHERE "submissions"."id" = $1 LIMIT $2[0m  [["id", 38], ["LIMIT", 1]]
+  [1m[36mSubmission Load (0.4ms)[0m  [1m[34mSELECT  "submissions".* FROM "submissions" WHERE "submissions"."id" = $1 LIMIT $2[0m  [["id", 37], ["LIMIT", 1]]
+  [1m[36mSubmission Load (0.2ms)[0m  [1m[34mSELECT  "submissions".* FROM "submissions" WHERE "submissions"."id" = $1 LIMIT $2[0m  [["id", 36], ["LIMIT", 1]]
+  [1m[36mSubmission Load (0.3ms)[0m  [1m[34mSELECT  "submissions".* FROM "submissions" WHERE "submissions"."id" = $1 LIMIT $2[0m  [["id", 34], ["LIMIT", 1]]
+  [1m[36mSubmission Load (0.2ms)[0m  [1m[34mSELECT  "submissions".* FROM "submissions" WHERE "submissions"."id" = $1 LIMIT $2[0m  [["id", 33], ["LIMIT", 1]]
+  [1m[36mSubmission Load (0.3ms)[0m  [1m[34mSELECT  "submissions".* FROM "submissions" WHERE "submissions"."id" = $1 LIMIT $2[0m  [["id", 32], ["LIMIT", 1]]
+  [1m[36mSubmission Load (0.2ms)[0m  [1m[34mSELECT  "submissions".* FROM "submissions" WHERE "submissions"."id" = $1 LIMIT $2[0m  [["id", 31], ["LIMIT", 1]]
+  [1m[36mSubmission Load (0.3ms)[0m  [1m[34mSELECT  "submissions".* FROM "submissions" WHERE "submissions"."id" = $1 LIMIT $2[0m  [["id", 30], ["LIMIT", 1]]
+  [1m[36mSubmission Load (0.2ms)[0m  [1m[34mSELECT  "submissions".* FROM "submissions" WHERE "submissions"."id" = $1 LIMIT $2[0m  [["id", 29], ["LIMIT", 1]]
+  [1m[36mSubmission Load (0.2ms)[0m  [1m[34mSELECT  "submissions".* FROM "submissions" WHERE "submissions"."id" = $1 LIMIT $2[0m  [["id", 28], ["LIMIT", 1]]
+  [1m[36mSubmission Load (0.2ms)[0m  [1m[34mSELECT  "submissions".* FROM "submissions" WHERE "submissions"."id" = $1 LIMIT $2[0m  [["id", 27], ["LIMIT", 1]]
+  [1m[36mSubmission Load (0.3ms)[0m  [1m[34mSELECT  "submissions".* FROM "submissions" WHERE "submissions"."id" = $1 LIMIT $2[0m  [["id", 26], ["LIMIT", 1]]
+  [1m[36mSubmission Load (0.2ms)[0m  [1m[34mSELECT  "submissions".* FROM "submissions" WHERE "submissions"."id" = $1 LIMIT $2[0m  [["id", 25], ["LIMIT", 1]]
+  [1m[36mSubmission Load (0.2ms)[0m  [1m[34mSELECT  "submissions".* FROM "submissions" WHERE "submissions"."id" = $1 LIMIT $2[0m  [["id", 24], ["LIMIT", 1]]
+  [1m[36mSubmission Load (0.2ms)[0m  [1m[34mSELECT  "submissions".* FROM "submissions" WHERE "submissions"."id" = $1 LIMIT $2[0m  [["id", 23], ["LIMIT", 1]]
+  [1m[36mSubmission Load (0.2ms)[0m  [1m[34mSELECT  "submissions".* FROM "submissions" WHERE "submissions"."id" = $1 LIMIT $2[0m  [["id", 22], ["LIMIT", 1]]
+  [1m[36mSubmission Load (0.2ms)[0m  [1m[34mSELECT  "submissions".* FROM "submissions" WHERE "submissions"."id" = $1 LIMIT $2[0m  [["id", 21], ["LIMIT", 1]]
+  [1m[36mSubmission Load (0.2ms)[0m  [1m[34mSELECT  "submissions".* FROM "submissions" WHERE "submissions"."id" = $1 LIMIT $2[0m  [["id", 20], ["LIMIT", 1]]
+  [1m[36mSubmission Load (0.1ms)[0m  [1m[34mSELECT  "submissions".* FROM "submissions" WHERE "submissions"."id" = $1 LIMIT $2[0m  [["id", 19], ["LIMIT", 1]]
+  [1m[36mSubmission Load (0.2ms)[0m  [1m[34mSELECT  "submissions".* FROM "submissions" WHERE "submissions"."id" = $1 LIMIT $2[0m  [["id", 18], ["LIMIT", 1]]
+  [1m[36mSubmission Load (0.2ms)[0m  [1m[34mSELECT  "submissions".* FROM "submissions" WHERE "submissions"."id" = $1 LIMIT $2[0m  [["id", 17], ["LIMIT", 1]]
+  [1m[36mSubmission Load (0.2ms)[0m  [1m[34mSELECT  "submissions".* FROM "submissions" WHERE "submissions"."id" = $1 LIMIT $2[0m  [["id", 16], ["LIMIT", 1]]
+  [1m[36mSubmission Load (0.1ms)[0m  [1m[34mSELECT  "submissions".* FROM "submissions" WHERE "submissions"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  [1m[36mSubmission Load (0.1ms)[0m  [1m[34mSELECT  "submissions".* FROM "submissions" WHERE "submissions"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+  [1m[36mSubmission Load (0.2ms)[0m  [1m[34mSELECT  "submissions".* FROM "submissions" WHERE "submissions"."id" = $1 LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  [1m[36mSubmission Load (0.1ms)[0m  [1m[34mSELECT  "submissions".* FROM "submissions" WHERE "submissions"."id" = $1 LIMIT $2[0m  [["id", 12], ["LIMIT", 1]]
+  [1m[36mSubmission Load (0.2ms)[0m  [1m[34mSELECT  "submissions".* FROM "submissions" WHERE "submissions"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  [1m[36mSubmission Load (0.1ms)[0m  [1m[34mSELECT  "submissions".* FROM "submissions" WHERE "submissions"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  [1m[36mSubmission Load (0.2ms)[0m  [1m[34mSELECT  "submissions".* FROM "submissions" WHERE "submissions"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  [1m[36mSubmission Load (0.1ms)[0m  [1m[34mSELECT  "submissions".* FROM "submissions" WHERE "submissions"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  [1m[36mSubmission Load (0.2ms)[0m  [1m[34mSELECT  "submissions".* FROM "submissions" WHERE "submissions"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  [1m[36mSubmission Load (0.1ms)[0m  [1m[34mSELECT  "submissions".* FROM "submissions" WHERE "submissions"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[36mSubmission Load (0.2ms)[0m  [1m[34mSELECT  "submissions".* FROM "submissions" WHERE "submissions"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[36mSubmission Load (0.1ms)[0m  [1m[34mSELECT  "submissions".* FROM "submissions" WHERE "submissions"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mSubmission Load (0.2ms)[0m  [1m[34mSELECT  "submissions".* FROM "submissions" WHERE "submissions"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mSubmission Load (0.1ms)[0m  [1m[34mSELECT  "submissions".* FROM "submissions" WHERE "submissions"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mSubmission Load (0.2ms)[0m  [1m[34mSELECT  "submissions".* FROM "submissions" WHERE "submissions"."id" = $1 LIMIT $2[0m  [["id", 74], ["LIMIT", 1]]
+  Rendering static_pages/home.html.erb within layouts/application
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 73]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 72]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 71]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 70]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 69]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 68]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 67]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 66]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 65]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 64]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 63]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 62]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 61]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 60]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 59]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 58]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 57]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 56]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 55]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 54]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 53]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 52]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 50]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 48]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 47]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 46]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 45]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 44]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 43]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 42]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 41]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 40]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 39]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 38]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 37]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 36]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 34]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 33]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 32]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 31]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 30]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 29]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 28]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 27]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 26]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 25]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 24]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 23]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 22]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 21]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 20]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 19]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 18]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 17]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 16]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 15]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 14]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 13]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 12]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 11]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 10]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 9]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 8]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 7]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 6]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 5]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 4]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 3]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 74]]
+  Rendered static_pages/home.html.erb within layouts/application (53.4ms)
+  Rendered layouts/_shim.html.erb (22.1ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 24], ["LIMIT", 1]]
+  Rendered layouts/_header.html.erb (2.9ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 213ms (Views: 83.8ms | ActiveRecord: 38.9ms)
+
+
+Started GET "/stylesheets/materialize.min.css" for ::1 at 2017-04-23 21:21:00 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/stylesheets/materialize.min.css"):
+  
+actionpack (5.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.5.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.0) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.0) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.2) lib/rails/engine.rb:522:in `call'
+puma (3.8.2) lib/puma/configuration.rb:224:in `call'
+puma (3.8.2) lib/puma/server.rb:600:in `handle_request'
+puma (3.8.2) lib/puma/server.rb:435:in `process_client'
+puma (3.8.2) lib/puma/server.rb:299:in `block in run'
+puma (3.8.2) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+  Rendering /Users/davidmieloch/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /Users/davidmieloch/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/davidmieloch/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered collection of /Users/davidmieloch/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/routes/_route.html.erb [23 times] (5.2ms)
+  Rendered /Users/davidmieloch/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.6ms)
+  Rendering /Users/davidmieloch/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/davidmieloch/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/davidmieloch/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (72.7ms)
+Started GET "/users/24" for ::1 at 2017-04-23 21:25:08 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"24"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 24], ["LIMIT", 1]]
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 24], ["LIMIT", 1]]
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mSubmission Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "submissions" WHERE "submissions"."user_id" = $1 LIMIT $2[0m  [["user_id", 24], ["LIMIT", 1]]
+  [1m[36mSubmission Load (0.4ms)[0m  [1m[34mSELECT "submissions".* FROM "submissions" WHERE "submissions"."user_id" = $1[0m  [["user_id", 24]]
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 72]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 73]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 74]]
+  [1m[36mComment Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "comments" WHERE "comments"."user_id" = $1 LIMIT $2[0m  [["user_id", 24], ["LIMIT", 1]]
+  [1m[36mComment Load (0.5ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."user_id" = $1[0m  [["user_id", 24]]
+  [1m[36mSubmission Load (0.4ms)[0m  [1m[34mSELECT  "submissions".* FROM "submissions" WHERE "submissions"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mSubmission Load (0.4ms)[0m  [1m[34mSELECT  "submissions".* FROM "submissions" WHERE "submissions"."id" = $1 LIMIT $2[0m  [["id", 68], ["LIMIT", 1]]
+  [1m[36mSubmission Load (0.4ms)[0m  [1m[34mSELECT  "submissions".* FROM "submissions" WHERE "submissions"."id" = $1 LIMIT $2[0m  [["id", 64], ["LIMIT", 1]]
+  [1m[36mSubmission Load (0.4ms)[0m  [1m[34mSELECT  "submissions".* FROM "submissions" WHERE "submissions"."id" = $1 LIMIT $2[0m  [["id", 72], ["LIMIT", 1]]
+  [1m[36mSubmission Load (0.4ms)[0m  [1m[34mSELECT  "submissions".* FROM "submissions" WHERE "submissions"."id" = $1 LIMIT $2[0m  [["id", 74], ["LIMIT", 1]]
+  Rendered users/show.html.erb within layouts/application (17.6ms)
+  Rendered layouts/_shim.html.erb (34.5ms)
+  Rendered layouts/_header.html.erb (2.5ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 65ms (Views: 57.1ms | ActiveRecord: 5.6ms)
+
+
+Started GET "/submissions" for ::1 at 2017-04-23 21:25:08 -0400
+Processing by SubmissionsController#index as HTML
+  [1m[36mSubmission Load (0.7ms)[0m  [1m[34mSELECT "submissions".* FROM "submissions"[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 1]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 2]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 3]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 4]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 5]]
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 6]]
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 7]]
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 8]]
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 9]]
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 10]]
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 11]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 12]]
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 13]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 14]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 15]]
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 16]]
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 17]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 18]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 19]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 20]]
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 21]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 22]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 23]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 24]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 25]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 26]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 27]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 28]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 29]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 30]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 31]]
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 32]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 33]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 34]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 36]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 37]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 38]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 39]]
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 40]]
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 41]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 42]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 43]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 44]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 45]]
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 46]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 47]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 48]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 50]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 52]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 53]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 54]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 55]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 56]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 57]]
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 58]]
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 59]]
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 60]]
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 61]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 62]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 63]]
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 64]]
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 65]]
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 66]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 67]]
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 68]]
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 69]]
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 70]]
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 71]]
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 72]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 73]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 74]]
+  [1m[36mSubmission Load (0.2ms)[0m  [1m[34mSELECT  "submissions".* FROM "submissions" WHERE "submissions"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mSubmission Load (0.2ms)[0m  [1m[34mSELECT  "submissions".* FROM "submissions" WHERE "submissions"."id" = $1 LIMIT $2[0m  [["id", 73], ["LIMIT", 1]]
+  [1m[36mSubmission Load (0.2ms)[0m  [1m[34mSELECT  "submissions".* FROM "submissions" WHERE "submissions"."id" = $1 LIMIT $2[0m  [["id", 72], ["LIMIT", 1]]
+  [1m[36mSubmission Load (0.2ms)[0m  [1m[34mSELECT  "submissions".* FROM "submissions" WHERE "submissions"."id" = $1 LIMIT $2[0m  [["id", 71], ["LIMIT", 1]]
+  [1m[36mSubmission Load (0.2ms)[0m  [1m[34mSELECT  "submissions".* FROM "submissions" WHERE "submissions"."id" = $1 LIMIT $2[0m  [["id", 70], ["LIMIT", 1]]
+  [1m[36mSubmission Load (0.2ms)[0m  [1m[34mSELECT  "submissions".* FROM "submissions" WHERE "submissions"."id" = $1 LIMIT $2[0m  [["id", 69], ["LIMIT", 1]]
+  [1m[36mSubmission Load (0.2ms)[0m  [1m[34mSELECT  "submissions".* FROM "submissions" WHERE "submissions"."id" = $1 LIMIT $2[0m  [["id", 68], ["LIMIT", 1]]
+  [1m[36mSubmission Load (0.2ms)[0m  [1m[34mSELECT  "submissions".* FROM "submissions" WHERE "submissions"."id" = $1 LIMIT $2[0m  [["id", 67], ["LIMIT", 1]]
+  [1m[36mSubmission Load (0.2ms)[0m  [1m[34mSELECT  "submissions".* FROM "submissions" WHERE "submissions"."id" = $1 LIMIT $2[0m  [["id", 66], ["LIMIT", 1]]
+  [1m[36mSubmission Load (0.2ms)[0m  [1m[34mSELECT  "submissions".* FROM "submissions" WHERE "submissions"."id" = $1 LIMIT $2[0m  [["id", 65], ["LIMIT", 1]]
+  [1m[36mSubmission Load (0.2ms)[0m  [1m[34mSELECT  "submissions".* FROM "submissions" WHERE "submissions"."id" = $1 LIMIT $2[0m  [["id", 64], ["LIMIT", 1]]
+  [1m[36mSubmission Load (0.2ms)[0m  [1m[34mSELECT  "submissions".* FROM "submissions" WHERE "submissions"."id" = $1 LIMIT $2[0m  [["id", 63], ["LIMIT", 1]]
+  [1m[36mSubmission Load (0.2ms)[0m  [1m[34mSELECT  "submissions".* FROM "submissions" WHERE "submissions"."id" = $1 LIMIT $2[0m  [["id", 62], ["LIMIT", 1]]
+  [1m[36mSubmission Load (0.2ms)[0m  [1m[34mSELECT  "submissions".* FROM "submissions" WHERE "submissions"."id" = $1 LIMIT $2[0m  [["id", 61], ["LIMIT", 1]]
+  [1m[36mSubmission Load (0.2ms)[0m  [1m[34mSELECT  "submissions".* FROM "submissions" WHERE "submissions"."id" = $1 LIMIT $2[0m  [["id", 60], ["LIMIT", 1]]
+  [1m[36mSubmission Load (0.2ms)[0m  [1m[34mSELECT  "submissions".* FROM "submissions" WHERE "submissions"."id" = $1 LIMIT $2[0m  [["id", 59], ["LIMIT", 1]]
+  [1m[36mSubmission Load (0.2ms)[0m  [1m[34mSELECT  "submissions".* FROM "submissions" WHERE "submissions"."id" = $1 LIMIT $2[0m  [["id", 58], ["LIMIT", 1]]
+  [1m[36mSubmission Load (0.2ms)[0m  [1m[34mSELECT  "submissions".* FROM "submissions" WHERE "submissions"."id" = $1 LIMIT $2[0m  [["id", 57], ["LIMIT", 1]]
+  [1m[36mSubmission Load (0.2ms)[0m  [1m[34mSELECT  "submissions".* FROM "submissions" WHERE "submissions"."id" = $1 LIMIT $2[0m  [["id", 56], ["LIMIT", 1]]
+  [1m[36mSubmission Load (0.2ms)[0m  [1m[34mSELECT  "submissions".* FROM "submissions" WHERE "submissions"."id" = $1 LIMIT $2[0m  [["id", 55], ["LIMIT", 1]]
+  [1m[36mSubmission Load (0.2ms)[0m  [1m[34mSELECT  "submissions".* FROM "submissions" WHERE "submissions"."id" = $1 LIMIT $2[0m  [["id", 54], ["LIMIT", 1]]
+  [1m[36mSubmission Load (0.2ms)[0m  [1m[34mSELECT  "submissions".* FROM "submissions" WHERE "submissions"."id" = $1 LIMIT $2[0m  [["id", 53], ["LIMIT", 1]]
+  [1m[36mSubmission Load (0.2ms)[0m  [1m[34mSELECT  "submissions".* FROM "submissions" WHERE "submissions"."id" = $1 LIMIT $2[0m  [["id", 52], ["LIMIT", 1]]
+  [1m[36mSubmission Load (0.2ms)[0m  [1m[34mSELECT  "submissions".* FROM "submissions" WHERE "submissions"."id" = $1 LIMIT $2[0m  [["id", 50], ["LIMIT", 1]]
+  [1m[36mSubmission Load (0.2ms)[0m  [1m[34mSELECT  "submissions".* FROM "submissions" WHERE "submissions"."id" = $1 LIMIT $2[0m  [["id", 48], ["LIMIT", 1]]
+  [1m[36mSubmission Load (0.2ms)[0m  [1m[34mSELECT  "submissions".* FROM "submissions" WHERE "submissions"."id" = $1 LIMIT $2[0m  [["id", 47], ["LIMIT", 1]]
+  [1m[36mSubmission Load (0.2ms)[0m  [1m[34mSELECT  "submissions".* FROM "submissions" WHERE "submissions"."id" = $1 LIMIT $2[0m  [["id", 46], ["LIMIT", 1]]
+  [1m[36mSubmission Load (0.2ms)[0m  [1m[34mSELECT  "submissions".* FROM "submissions" WHERE "submissions"."id" = $1 LIMIT $2[0m  [["id", 45], ["LIMIT", 1]]
+  [1m[36mSubmission Load (0.2ms)[0m  [1m[34mSELECT  "submissions".* FROM "submissions" WHERE "submissions"."id" = $1 LIMIT $2[0m  [["id", 44], ["LIMIT", 1]]
+  [1m[36mSubmission Load (0.2ms)[0m  [1m[34mSELECT  "submissions".* FROM "submissions" WHERE "submissions"."id" = $1 LIMIT $2[0m  [["id", 43], ["LIMIT", 1]]
+  [1m[36mSubmission Load (0.2ms)[0m  [1m[34mSELECT  "submissions".* FROM "submissions" WHERE "submissions"."id" = $1 LIMIT $2[0m  [["id", 42], ["LIMIT", 1]]
+  [1m[36mSubmission Load (0.2ms)[0m  [1m[34mSELECT  "submissions".* FROM "submissions" WHERE "submissions"."id" = $1 LIMIT $2[0m  [["id", 41], ["LIMIT", 1]]
+  [1m[36mSubmission Load (0.2ms)[0m  [1m[34mSELECT  "submissions".* FROM "submissions" WHERE "submissions"."id" = $1 LIMIT $2[0m  [["id", 40], ["LIMIT", 1]]
+  [1m[36mSubmission Load (0.4ms)[0m  [1m[34mSELECT  "submissions".* FROM "submissions" WHERE "submissions"."id" = $1 LIMIT $2[0m  [["id", 39], ["LIMIT", 1]]
+  [1m[36mSubmission Load (0.3ms)[0m  [1m[34mSELECT  "submissions".* FROM "submissions" WHERE "submissions"."id" = $1 LIMIT $2[0m  [["id", 38], ["LIMIT", 1]]
+  [1m[36mSubmission Load (0.2ms)[0m  [1m[34mSELECT  "submissions".* FROM "submissions" WHERE "submissions"."id" = $1 LIMIT $2[0m  [["id", 37], ["LIMIT", 1]]
+  [1m[36mSubmission Load (0.3ms)[0m  [1m[34mSELECT  "submissions".* FROM "submissions" WHERE "submissions"."id" = $1 LIMIT $2[0m  [["id", 36], ["LIMIT", 1]]
+  [1m[36mSubmission Load (0.2ms)[0m  [1m[34mSELECT  "submissions".* FROM "submissions" WHERE "submissions"."id" = $1 LIMIT $2[0m  [["id", 34], ["LIMIT", 1]]
+  [1m[36mSubmission Load (0.2ms)[0m  [1m[34mSELECT  "submissions".* FROM "submissions" WHERE "submissions"."id" = $1 LIMIT $2[0m  [["id", 33], ["LIMIT", 1]]
+  [1m[36mSubmission Load (0.2ms)[0m  [1m[34mSELECT  "submissions".* FROM "submissions" WHERE "submissions"."id" = $1 LIMIT $2[0m  [["id", 32], ["LIMIT", 1]]
+  [1m[36mSubmission Load (0.2ms)[0m  [1m[34mSELECT  "submissions".* FROM "submissions" WHERE "submissions"."id" = $1 LIMIT $2[0m  [["id", 31], ["LIMIT", 1]]
+  [1m[36mSubmission Load (0.2ms)[0m  [1m[34mSELECT  "submissions".* FROM "submissions" WHERE "submissions"."id" = $1 LIMIT $2[0m  [["id", 30], ["LIMIT", 1]]
+  [1m[36mSubmission Load (0.2ms)[0m  [1m[34mSELECT  "submissions".* FROM "submissions" WHERE "submissions"."id" = $1 LIMIT $2[0m  [["id", 29], ["LIMIT", 1]]
+  [1m[36mSubmission Load (0.2ms)[0m  [1m[34mSELECT  "submissions".* FROM "submissions" WHERE "submissions"."id" = $1 LIMIT $2[0m  [["id", 28], ["LIMIT", 1]]
+  [1m[36mSubmission Load (0.2ms)[0m  [1m[34mSELECT  "submissions".* FROM "submissions" WHERE "submissions"."id" = $1 LIMIT $2[0m  [["id", 27], ["LIMIT", 1]]
+  [1m[36mSubmission Load (0.3ms)[0m  [1m[34mSELECT  "submissions".* FROM "submissions" WHERE "submissions"."id" = $1 LIMIT $2[0m  [["id", 26], ["LIMIT", 1]]
+  [1m[36mSubmission Load (0.3ms)[0m  [1m[34mSELECT  "submissions".* FROM "submissions" WHERE "submissions"."id" = $1 LIMIT $2[0m  [["id", 25], ["LIMIT", 1]]
+  [1m[36mSubmission Load (0.2ms)[0m  [1m[34mSELECT  "submissions".* FROM "submissions" WHERE "submissions"."id" = $1 LIMIT $2[0m  [["id", 24], ["LIMIT", 1]]
+  [1m[36mSubmission Load (0.2ms)[0m  [1m[34mSELECT  "submissions".* FROM "submissions" WHERE "submissions"."id" = $1 LIMIT $2[0m  [["id", 23], ["LIMIT", 1]]
+  [1m[36mSubmission Load (0.2ms)[0m  [1m[34mSELECT  "submissions".* FROM "submissions" WHERE "submissions"."id" = $1 LIMIT $2[0m  [["id", 22], ["LIMIT", 1]]
+  [1m[36mSubmission Load (0.2ms)[0m  [1m[34mSELECT  "submissions".* FROM "submissions" WHERE "submissions"."id" = $1 LIMIT $2[0m  [["id", 21], ["LIMIT", 1]]
+  [1m[36mSubmission Load (0.2ms)[0m  [1m[34mSELECT  "submissions".* FROM "submissions" WHERE "submissions"."id" = $1 LIMIT $2[0m  [["id", 20], ["LIMIT", 1]]
+  [1m[36mSubmission Load (0.2ms)[0m  [1m[34mSELECT  "submissions".* FROM "submissions" WHERE "submissions"."id" = $1 LIMIT $2[0m  [["id", 19], ["LIMIT", 1]]
+  [1m[36mSubmission Load (0.2ms)[0m  [1m[34mSELECT  "submissions".* FROM "submissions" WHERE "submissions"."id" = $1 LIMIT $2[0m  [["id", 18], ["LIMIT", 1]]
+  [1m[36mSubmission Load (0.2ms)[0m  [1m[34mSELECT  "submissions".* FROM "submissions" WHERE "submissions"."id" = $1 LIMIT $2[0m  [["id", 17], ["LIMIT", 1]]
+  [1m[36mSubmission Load (0.2ms)[0m  [1m[34mSELECT  "submissions".* FROM "submissions" WHERE "submissions"."id" = $1 LIMIT $2[0m  [["id", 16], ["LIMIT", 1]]
+  [1m[36mSubmission Load (0.2ms)[0m  [1m[34mSELECT  "submissions".* FROM "submissions" WHERE "submissions"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  [1m[36mSubmission Load (0.2ms)[0m  [1m[34mSELECT  "submissions".* FROM "submissions" WHERE "submissions"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+  [1m[36mSubmission Load (0.2ms)[0m  [1m[34mSELECT  "submissions".* FROM "submissions" WHERE "submissions"."id" = $1 LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  [1m[36mSubmission Load (0.2ms)[0m  [1m[34mSELECT  "submissions".* FROM "submissions" WHERE "submissions"."id" = $1 LIMIT $2[0m  [["id", 12], ["LIMIT", 1]]
+  [1m[36mSubmission Load (0.2ms)[0m  [1m[34mSELECT  "submissions".* FROM "submissions" WHERE "submissions"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  [1m[36mSubmission Load (0.1ms)[0m  [1m[34mSELECT  "submissions".* FROM "submissions" WHERE "submissions"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  [1m[36mSubmission Load (0.2ms)[0m  [1m[34mSELECT  "submissions".* FROM "submissions" WHERE "submissions"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  [1m[36mSubmission Load (0.2ms)[0m  [1m[34mSELECT  "submissions".* FROM "submissions" WHERE "submissions"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  [1m[36mSubmission Load (0.2ms)[0m  [1m[34mSELECT  "submissions".* FROM "submissions" WHERE "submissions"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  [1m[36mSubmission Load (0.2ms)[0m  [1m[34mSELECT  "submissions".* FROM "submissions" WHERE "submissions"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[36mSubmission Load (0.2ms)[0m  [1m[34mSELECT  "submissions".* FROM "submissions" WHERE "submissions"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[36mSubmission Load (0.2ms)[0m  [1m[34mSELECT  "submissions".* FROM "submissions" WHERE "submissions"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mSubmission Load (0.2ms)[0m  [1m[34mSELECT  "submissions".* FROM "submissions" WHERE "submissions"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mSubmission Load (0.2ms)[0m  [1m[34mSELECT  "submissions".* FROM "submissions" WHERE "submissions"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mSubmission Load (0.2ms)[0m  [1m[34mSELECT  "submissions".* FROM "submissions" WHERE "submissions"."id" = $1 LIMIT $2[0m  [["id", 74], ["LIMIT", 1]]
+  Rendering submissions/index.html.erb within layouts/application
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 73]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 72]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 71]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 70]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 69]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 68]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 67]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 66]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 65]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 64]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 63]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 62]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 61]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 60]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 59]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 58]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 57]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 56]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 55]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 54]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 53]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 52]]
+  [1m[36mCACHE (0.1ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 50]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 48]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 47]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 46]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 45]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 44]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 43]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 42]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 41]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 40]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 39]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 38]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 37]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 36]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 34]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 33]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 32]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 31]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 30]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 29]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 28]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 27]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 26]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 25]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 24]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 23]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 22]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 21]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 20]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 19]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 18]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 17]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 16]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 15]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 14]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 13]]
+  [1m[36mCACHE (0.1ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 12]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 11]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 10]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 9]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 8]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 7]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 6]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 5]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 4]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 3]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT SUM("votes"."upvote") FROM "votes" WHERE "votes"."submission_id" = $1[0m  [["submission_id", 74]]
+  Rendered submissions/index.html.erb within layouts/application (73.9ms)
+  Rendered layouts/_shim.html.erb (26.7ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 24], ["LIMIT", 1]]
+  Rendered layouts/_header.html.erb (3.1ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 257ms (Views: 110.8ms | ActiveRecord: 40.2ms)
+
+
+Started GET "/users" for ::1 at 2017-04-23 21:25:11 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 24], ["LIMIT", 1]]
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  Rendered users/index.html.erb within layouts/application (4.5ms)
+  Rendered layouts/_shim.html.erb (31.8ms)
+  Rendered layouts/_header.html.erb (2.2ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 49ms (Views: 45.9ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/users/15" for ::1 at 2017-04-23 21:25:12 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"15"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 24], ["LIMIT", 1]]
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mSubmission Exists (0.7ms)[0m  [1m[34mSELECT  1 AS one FROM "submissions" WHERE "submissions"."user_id" = $1 LIMIT $2[0m  [["user_id", 15], ["LIMIT", 1]]
+  [1m[36mComment Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "comments" WHERE "comments"."user_id" = $1 LIMIT $2[0m  [["user_id", 15], ["LIMIT", 1]]
+  Rendered users/show.html.erb within layouts/application (5.8ms)
+  Rendered layouts/_shim.html.erb (27.6ms)
+  Rendered layouts/_header.html.erb (2.1ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 45ms (Views: 41.0ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/users/13" for ::1 at 2017-04-23 21:25:17 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"13"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 24], ["LIMIT", 1]]
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mSubmission Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM "submissions" WHERE "submissions"."user_id" = $1 LIMIT $2[0m  [["user_id", 13], ["LIMIT", 1]]
+  [1m[36mComment Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "comments" WHERE "comments"."user_id" = $1 LIMIT $2[0m  [["user_id", 13], ["LIMIT", 1]]
+  Rendered users/show.html.erb within layouts/application (5.9ms)
+  Rendered layouts/_shim.html.erb (27.3ms)
+  Rendered layouts/_header.html.erb (1.9ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 46ms (Views: 41.8ms | ActiveRecord: 1.8ms)
+
+
