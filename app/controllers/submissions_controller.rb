@@ -20,11 +20,14 @@ class SubmissionsController < ApplicationController
 	def create
 		page = MetaInspector.new(submission_params[:url])
 		img = page.images.best
-		@submission = Submission.new(submission_params)
-		@submission.image = img
-		@submission.user_id = session[:user_id]
+		@submission = Submission.new(
+			image: img,
+			title: page.meta_tag["property"]["og:title"],
+			description: page.meta_tag["property"]["og:description"],
+			user_id: session[:user_id]
+			)
 		if @submission.save
-			redirect_to submission_path(@submission)
+			redirect_to edit_submission_path(@submission)
 		else
 			render 'new'
 		end
@@ -52,7 +55,7 @@ class SubmissionsController < ApplicationController
 	private
 
 	def submission_params
-		params.require(:submission).permit(:title, :url, :description, :user_id)
+		params.require(:submission).permit( :url, :user_id)
 	end
 
 

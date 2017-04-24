@@ -28,6 +28,8 @@ gem 'ui_faces'
 
 gem 'geocoder'
 
+gem 'mechanize', '~> 2.7', '>= 2.7.5'
+
 # gem 'factory-helper'
 gem 'faker'
 

@@ -7,9 +7,10 @@
      <% if logged_in? %>
        <ul id="nav-mobile" class="right hide-on-med-and-down">
          <li><i class="material-icons">note_add</i></li>
-         <li><%= link_to "Submit Super Real News", new_submission_path %></li>
-         <li><i class="material-icons">perm_identity</i></li>
-         <li><%= link_to "Account (#{current_user.username})", current_user %></li>
+           <li id="submission_form"><%= form_for Submission.new do |f| %>
+                  <%= f.label :url%><%= f.text_field :url %>
+              <% end %>
+           </li>
           <li><%= link_to "Sign out", signout_path, method: :delete, :class => 'btn waves-effect waves-light' %></li>
       </ul>
      <% else %>
@@ -22,6 +23,8 @@
    </div>
    <div class="nav-content">
      <ul class="tabs tabs-transparent">
+       <li><i class="material-icons">perm_identity</i></li>
+       <li><%= link_to "Account (#{current_user.username})", current_user %></li>
        <li class="tab"><%= link_to "Current Events", submissions_path %></li>
        <li class="tab"><%= link_to "Informed Members", users_path %></li>
      </ul>
