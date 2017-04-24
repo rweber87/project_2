@@ -26,6 +26,8 @@ gem 'sanitize', '~> 4.4'
 
 gem 'ui_faces'
 
+gem 'geocoder'
+
 # gem 'factory-helper'
 gem 'faker'
 

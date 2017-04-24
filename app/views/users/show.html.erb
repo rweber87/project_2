@@ -1,33 +1,91 @@
-<div>
-
-  <aside>
-
-    <section>
-      <h1>Name: <%= @user.name %></h1>
-      <h2>Username: <%= @user.username %></h2>
-      <div class="left" style="margin-right:10px;">
+<br>
+<div class="col s12 m7">
+  <div class="card horizontal">
+    <div class="collection-item avatar" style="margin-top:20px; margin-left:20px;">
+      <%= image_tag @user.image, :class => 'circle' %>
+    </div>
+    <div class="card-stacked">
+      <div class="card-content">
+        <h5><strong><%= @user.name %></strong> <%= @user.gameofthrones_house %></h5>
+          <p><b>User Submission Score</b>: <%= @user.user_score %></p>
+          <p><b>Wisdowm Such As</b>: "<%= @user.chuck_norris_fact %>"</p>
+          <p><b>Planet of Origin</b>: <%= @user.space_planet %>, <%= @user.harry_potter_location %></p>
+        </ul>
+      </div>
+      <div class="card-action">
         <%= link_to 'Edit', edit_user_path, :class => 'btn waves-effect waves-light' %>
       </div>
-      <div>
-        <%= link_to "Sign out", signout_path, method: :delete, :class => 'btn waves-effect waves-light' %>
-      </div>
-      <h2>link points: 0</h2>
-    </section>
-    <section>
-
-    </section>
-  </aside>
-
-  <aside>
-
-    <section>
-      <h1>Posts</h1>
-      <section>
-        <p>User submissions</p>
-      </section>
-      <br>
-      <h1>Comments</h1>
-      <p>User comments</p>
-    </section>
-  </aside>
+    </div>
+  </div>
 </div>
+
+<br><h5>ABOUT ME</h5>
+
+<br>
+<ol class="collection flow-text">
+  <li class="collection-item">If I were a book I'd be a <strong><%= @user.book_genre %></strong>.</li>
+  <li class="collection-item">When I go beer mode I always go <strong><%= @user.beer_name %></strong>.</li>
+  <li class="collection-item"><strong><%= @user.food_ingredient %></strong> is pretty much all I eat.</li>
+  <li class="collection-item">If this were a job interview, I'd tell you that my best skill is <strong><%= @user.job_key_skill %>.</strong></li>
+  <li class="collection-item">On my best days I almost always fire up <strong><%= @user.rockband_name %></strong> and blare on <strong><%= rand(1..11).to_s %>.</strong></li>
+</ol>
+
+<br><h4>SUBMISSIONS</h4>
+  <% if @user.submissions.empty? %>
+    <br>
+      <h5>I haven't submitted any links yet.</h5>
+    <br>
+  <% else %>
+    <% @user.submissions.each do |submission| %>
+    	<div class="col s12 m7">
+    	   <div class="card horizontal">
+    	      <div class="card-image">
+    				    <div style="margin-top:45px;">
+        					<%= link_to submission_path(submission) do %>
+        	        	<%= image_tag submission.image, size: "130" %>
+        					<% end %>
+    					  </div>
+    	      </div>
+    	      <div class="card-stacked">
+    	        <div class="card-content">
+    	          <span class="flow-text"><h5><%= link_to submission.title, submission_path(submission) %></h5></span>
+                <p><%= submission.created_at.strftime("%b. %d  %Y") %></p>
+    	        </div>
+    	        <div class="card-action">
+    	          <%= link_to "click here", submission_path(submission) %>  <%= "Score: #{Vote.where(:submission_id => submission.id).sum(:upvote)}" %>
+    	        </div>
+    	      </div>
+    	    </div>
+      </div>
+    <% end %>
+  <% end %>
+
+<br><h4>COMMENTS</h4>
+<% if @user.comments.empty? %>
+<br>
+  <h5>I haven't partipating in anything yet.</h5>
+<br>
+<% else %>
+  <% @user.comments.each do |comment| %>
+      <div class="col s12 m7">
+         <div class="card horizontal">
+            <div class="card-image">
+                <div style="margin-top:45px;">
+                  <%= link_to submission_path(comment.submission) do %>
+                    <%= image_tag comment.submission.image, size: "130" %>
+                  <% end %>
+                </div>
+            </div>
+            <div class="card-stacked">
+              <div class="card-content">
+                <span class="flow-text"><%= link_to comment.submission.title, submission_path(comment.submission) %></span>
+                <span class="flow-text"><br><b>Comment:</b> <%= comment.body %></span>
+              </div>
+              <div class="card-action">
+                <%= link_to "click here", submission_path(comment.submission) %>
+              </div>
+            </div>
+          </div>
+      </div>
+  <% end %>
+<% end %>

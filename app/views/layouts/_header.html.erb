@@ -1,28 +1,6 @@
-<!-- <header>
-  <div class="container">
-    <nav>
-      <ul>
-        <li><b><%= link_to full_title(), root_path %></b></li>
-        <% if logged_in? %>
-          <li>Hi <strong><%= current_user.username.split.map(&:capitalize).join(' ') %>!</strong></li>
-            <ul>
-              <li><%= link_to "Profile", current_user %></li>
-              <li><%= link_to "Edit Profile", edit_user_path(current_user) %></li>
-              <li><%= link_to "New Submission", new_submission_path %></li>
-              <li><%= link_to "All Users", users_path %></li>
-              <li><%= link_to "All Submissions", submissions_path %></li>
-              <li><%= button_to "Log out", signout_path, :class => 'btn waves-effect waves-light', :method => :delete %></li>
-            </ul>
-        <% else %>
-          <li><%= button_to "Log in", login_path, :class => 'btn waves-effect waves-light' %></li>
-        <% end %>
-      </ul>
-    </nav>
-  </div>
-</header> -->
 <header>
 <div class="container">
-<nav class="nav-extended">
+<nav class="nav-extended light-green darken-4">
    <div class="nav-wrapper">
      <%= link_to "ADDICTME", root_path, :class => 'brand-logo' %>
      <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
@@ -32,11 +10,12 @@
          <li><%= link_to "Submit Super Real News", new_submission_path %></li>
          <li><i class="material-icons">perm_identity</i></li>
          <li><%= link_to "Account (#{current_user.username})", current_user %></li>
+          <li><%= link_to "Sign out", signout_path, method: :delete, :class => 'btn waves-effect waves-light' %></li>
       </ul>
      <% else %>
     <div>
       <div class="right"><%= button_to "Log in", login_path, :class => 'btn waves-effect waves-light right', :style => 'margin-top:40px;margin-right:25px;' %></div>
-      <!-- <div class=""><%= link_to "Sign up!", signup_path, :class => 'btn waves-effect waves-light right' %></div> -->
+      <div><%= link_to "Sign up!", signup_path, :class => 'btn waves-effect waves-light right' %></div>
     </div>
     <% end %>
 

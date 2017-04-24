@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170423035044) do
+ActiveRecord::Schema.define(version: 20170423192650) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -55,6 +55,9 @@ ActiveRecord::Schema.define(version: 20170423035044) do
     t.string   "space_planet"
     t.string   "name"
     t.integer  "user_score",            default: 0
+    t.float    "latitude"
+    t.float    "longitude"
+    t.string   "rockband_name"
   end
 
   create_table "votes", force: :cascade do |t|
