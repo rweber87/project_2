@@ -1,27 +1,31 @@
-<div class="container">
 
 
-<h1>Log in</h1>
+
+
 
 <% if flash[:danger] %>
     <%= flash[:danger] %>
 <% end %>
 
-  <div class="row">
-    <div class="col-md-6 col-md-offset-3">
-      <%= form_tag '/login' do %>
-        <p>
-          <i class="material-icons prefix">account_circle</i><label style="margin-left:5px;font-size:28px">Username</label>
-          <%= text_field_tag :username %>
-        </p>
-        <p>
-          <i class="material-icons prefix">verified_user</i><label style = 'margin-left:5px;font-size:28px;'>Password</label>
-          <%= password_field_tag :password %>
-        </p>
-        <%= submit_tag "Log in", :class => 'btn waves-effect waves-light' %>
-      <% end %>
-
-      <p>New user? <%= link_to "Sign up now!", signup_path %></p>
-    </div>
+<div class="row">
+  <div class="col s6" style="margin-top:25px;">
+    <%= image_tag "https://s-media-cache-ak0.pinimg.com/736x/49/3f/13/493f13408b609f70ad59805bf07311b2.jpg", size: "400" %>
   </div>
+  <div class="col s6" style="margin-top:35px;">
+    <h4>ENTER AT YOUR PERIL</h4>
+    <%= form_tag '/login' do %>
+      <p>
+        <i class="material-icons prefix">account_circle</i><label style="margin-left:5px;font-size:28px">Username</label>
+        <%= text_field_tag :username %>
+      </p>
+      <p>
+        <i class="material-icons prefix">verified_user</i><label style = 'margin-left:5px;font-size:28px;'>Password</label>
+        <%= password_field_tag :password %>
+      </p>
+      <%= submit_tag "Log in", :class => 'btn waves-effect waves-light' %>
+    <% end %>
+
+    <p>New user? <%= link_to "Sign up now!", signup_path %></p>
+  </div>
+
 </div>

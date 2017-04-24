@@ -4,14 +4,18 @@
    <div class="nav-wrapper">
      <%= link_to "ADDICTME", root_path, :class => 'brand-logo' %>
      <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+
      <% if logged_in? %>
        <ul id="nav-mobile" class="right hide-on-med-and-down">
          <li><i class="material-icons">note_add</i></li>
-           <li id="submission_form"><%= form_for Submission.new do |f| %>
-                  <%= f.label :url%><%= f.text_field :url %>
-              <% end %>
+         <li id="submission_form">
+            <form accept-charset="UTF-8" method="post" action="/submissions">
+              <input placeholder="Paste URL Here" type="text" name="submission[url]" id="submission_url">
+              <input name="authenticity_token" type="hidden" value="submissions_post_action_token">
+             </form>
            </li>
-          <li><%= link_to "Sign out", signout_path, method: :delete, :class => 'btn waves-effect waves-light' %></li>
+          <li><i class="material-icons">perm_identity</i></li>
+          <li ><%= link_to "Account (#{current_user.username})", current_user %> <%= link_to "Sign out", signout_path, method: :delete, :class => 'btn waves-effect waves-light' %></li>
       </ul>
      <% else %>
     <div>
@@ -23,8 +27,6 @@
    </div>
    <div class="nav-content">
      <ul class="tabs tabs-transparent">
-       <li><i class="material-icons">perm_identity</i></li>
-       <li><%= link_to "Account (#{current_user.username})", current_user %></li>
        <li class="tab"><%= link_to "Current Events", submissions_path %></li>
        <li class="tab"><%= link_to "Informed Members", users_path %></li>
      </ul>
