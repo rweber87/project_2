@@ -7,9 +7,11 @@
      <% if logged_in? %>
        <ul id="nav-mobile" class="right hide-on-med-and-down">
          <li><i class="material-icons">note_add</i></li>
-           <li id="submission_form"><%= form_for Submission.new do |f| %>
-                  <%= f.label :url%><%= f.text_field :url %>
-              <% end %>
+           <li id="submission_form">
+             <form method="post" action="/submissions">
+                <input placeholder="Paste URL Here" type="text" name="submission[url]" id="submission_url">
+                <input name="authenticity_token" type="hidden" value="submissions_post_action_token">
+             </form>
            </li>
          <li><i class="material-icons">perm_identity</i></li>
          <li><%= link_to "Account (#{current_user.username})", current_user %></li>

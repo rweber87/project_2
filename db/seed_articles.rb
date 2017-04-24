@@ -15,7 +15,3 @@ urls.each do |url|
 		result = Submission.create({ title: result.title, url: result.link, description: Sanitize.clean(result.description.slice(0..200)), image: img })
 	end
 end
-
-
-page.meta_tag["property"]["og:description"]
-page.meta_tag["property"]["og:title"]
