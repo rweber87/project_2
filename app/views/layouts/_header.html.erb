@@ -5,19 +5,21 @@
      <%= link_to "ADDICTME", root_path, :class => 'brand-logo' %>
      <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
 
-     <div id="nav-mobile" class="right hide-on-med-and-down">
+     <ul id="nav-mobile" class="right hide-on-med-and-down">
      <% if logged_in? %>
-      <div class="">
-        <%= link_to "Account (#{current_user.username})", current_user %></li>
-      </div>
-         <!-- <li><i class="material-icons">note_add</i></li> -->
-      <div id="submission_form">
+
+         <li><i class="material-icons" style="margin-right:-20px;">note_add</i></li>
+      <li id="submission_form">
            <form accept-charset="UTF-8" method="post" action="/submissions">
-             <input placeholder="Paste URL Here" type="text" name="submission[url]" id="submission_url">
-             <input name="authenticity_token" type="hidden" value="submissions_post_action_token">
+             <span class="input-field"><input placeholder="Paste URL Here" type="text" name="submission[url]" id="submission_url"></span>
+             <input name="authenticity_token" type="hidden" value="<%= form_authenticity_token %>">
            </form>
-      </div>
-          <!-- <li><i class="material-icons">perm_identity</i></li> -->
+      </li>
+      <li><i class="material-icons" style="margin-right:-10px;">perm_identity</i></li>
+      <li class="">
+        <%= link_to "Account (#{current_user.username})", current_user %></li>
+      </li>
+
 
       </ul>
      <% else %>
@@ -26,8 +28,8 @@
           <li><%= link_to "Sign up!", signup_path, :class => 'btn waves-effect waves-light right', :style => 'margin-top:40px;margin-right:25px;' %></li>
     <% end %>
       </ul>
-
    </div>
+
    <div class="nav-content">
      <ul class="tabs tabs-transparent">
        <li class="tab"><%= link_to "Current Events", submissions_path %></li>

@@ -1,6 +1,19 @@
 <h2><%= link_to @submission.title, @submission.url, target: :_blank %></h2>
 
 <div class="divider"></div><br>
+
+<% if @submission.user.nil? %>
+<% else %>
+  <div class="row">
+    <div class="collection-item avatar left">
+      <%= image_tag("#{@submission.user.image}", size: "40", :class => "circle", :style => "margin-left: 15px;") %>
+    </div>
+    <div class="valign-wrapper">
+      <%= link_to(@submission.user.username, "/users/#{@submission.user.id}", :class => "title", :style => "margin-left: 15px; padding-top: 10px;") %>
+    </div>
+  </div>
+<% end %>
+
 <%= image_tag @submission.image, :class => "responsive-img" %>
 
 <h5 class="flow-text"><%= @submission.description %></h4><br>

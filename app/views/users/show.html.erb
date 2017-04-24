@@ -1,9 +1,12 @@
 <br>
 <div class="col s12 m7">
   <div class="card horizontal">
-    <div class="collection-item avatar" style="margin-top:20px; margin-left:20px;">
-      <%= image_tag @user.image, :class => 'circle' %>
-    </div>
+    <% if @user.image.nil? %>
+    <% else %>
+      <div class="collection-item avatar" style="margin-top:20px; margin-left:20px;">
+        <%= image_tag @user.image, :class => 'circle' %>
+      </div>
+    <% end %>
     <div class="card-stacked">
       <div class="card-content">
         <h5><strong><%= @user.name %></strong> <%= @user.gameofthrones_house %></h5>

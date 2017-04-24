@@ -3,7 +3,7 @@
 require 'ui_faces'
 require 'factory-helper'
 
-10.times do
+100.times do
   def generate_gender
     random_gender = Random.new.rand(0..1)
   end
