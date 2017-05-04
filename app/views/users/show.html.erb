@@ -1,19 +1,23 @@
 <br>
 <div class="col s12 m7">
   <div class="card horizontal">
-    <div class="collection-item avatar" style="margin-top:20px; margin-left:20px;">
-      <%= image_tag @user.image, :class => 'circle' %>
-    </div>
+    <% if @user.image.nil? %>
+    <% else %>
+      <div class="collection-item avatar" style="margin-top:20px; margin-left:20px;">
+        <%= image_tag @user.image, :class => 'circle' %>
+      </div>
+    <% end %>
     <div class="card-stacked">
       <div class="card-content">
         <h5><strong><%= @user.name %></strong> <%= @user.gameofthrones_house %></h5>
           <p><b>User Submission Score</b>: <%= @user.user_score %></p>
-          <p><b>Wisdowm Such As</b>: "<%= @user.chuck_norris_fact %>"</p>
+          <p><b>Wisdom Such As</b>: "<%= @user.chuck_norris_fact %>"</p>
           <p><b>Planet of Origin</b>: <%= @user.space_planet %>, <%= @user.harry_potter_location %></p>
         </ul>
       </div>
       <div class="card-action">
-        <%= link_to 'Edit', edit_user_path, :class => 'btn waves-effect waves-light' %>
+        <%= link_to 'Edit', edit_user_path, :class => 'btn waves-effect waves-light left', :style => 'margin-right:20px;' %>
+        <%= link_to "Sign out", signout_path, method: :delete, :class => 'btn waves-effect waves-light' %>
       </div>
     </div>
   </div>

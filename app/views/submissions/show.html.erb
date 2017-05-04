@@ -1,6 +1,19 @@
 <h2><%= link_to @submission.title, @submission.url, target: :_blank %></h2>
 
 <div class="divider"></div><br>
+
+<% if @submission.user.nil? %>
+<% else %>
+  <div class="row">
+    <div class="collection-item avatar left">
+      <%= image_tag("#{@submission.user.image}", size: "40", :class => "circle", :style => "margin-left: 15px;") %>
+    </div>
+    <div class="valign-wrapper">
+      <%= link_to(@submission.user.username, "/users/#{@submission.user.id}", :class => "title", :style => "margin-left: 15px; padding-top: 10px;") %>
+    </div>
+  </div>
+<% end %>
+
 <%= image_tag @submission.image, :class => "responsive-img" %>
 
 <h5 class="flow-text"><%= @submission.description %></h4><br>
@@ -49,7 +62,6 @@
                  <%= image_tag 'thumbsup.png', size: '125' %>
                <% end %>
              </div>
-             
              <div class="thumbsdown col s12 m6 l3 center">
                <%= link_to "/votes/#{@submission.id}_-1", method:"post" do  %>
                  <%= image_tag 'thumbdown.png', size: '125' %>
@@ -61,7 +73,6 @@
            <h4><%= flash[:notice]%></h4>
           </div>
          <% end %>
-       
      </div>
    </div>
 
