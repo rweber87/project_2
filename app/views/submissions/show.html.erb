@@ -40,34 +40,28 @@
          </div>
        <% end %>
      </div>
-     <div class="col s6">
-       <h4 class="">Vote!</h4>
-       <div class="container">
-         <div class="row">
-           <div class="col s1">
-           </div>
-           <div class="thumbsup col s3">
-             <%= link_to "/votes/#{@submission.id}_1", method:"post" do  %>
-               <%= image_tag 'thumbsup.png', size: '125' %>
-             <% end %>
-           </div>
-           <div "col s3">
-             Score<br> <%= @votes %>
-           </div>
-           <div class="col s1">
-           </div>
-           <div class="thumbsdown col s3">
-             <%= link_to "/votes/#{@submission.id}_-1", method:"post" do  %>
-               <%= image_tag 'thumbdown.png', size: '125' %>
-             <% end %>
-           </div>
+
+   <div class="row">
+     <h4 align="center">Vote: <%= @votes %></h4>
+       <div class="row">
+             <div class="thumbsup col s12 m6 l3 center">
+               <%= link_to "/votes/#{@submission.id}_1", method:"post" do  %>
+                 <%= image_tag 'thumbsup.png', size: '125' %>
+               <% end %>
+             </div>
+             
+             <div class="thumbsdown col s12 m6 l3 center">
+               <%= link_to "/votes/#{@submission.id}_-1", method:"post" do  %>
+                 <%= image_tag 'thumbdown.png', size: '125' %>
+               <% end %>
+             </div>
          </div>
          <% if flash[:notice] %>
-         <div class="center" style="color:green;">
+          <div class="center" style="color:green;">
            <h4><%= flash[:notice]%></h4>
-         </div>
+          </div>
          <% end %>
-       </div>
+       
      </div>
    </div>
 
