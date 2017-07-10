@@ -3,7 +3,7 @@
 <ul class="collection">
   <li class="collection-item avatar">
     <%= image_tag("#{user.image}", :class => "circle") %>
-    <%= link_to(user.name, "/users/#{user.id}", :class => "title") %>
+    <%= link_to(user.name, user_path(user), :class => "title") %>
     <p>
     City: <%= user.city %>
       <br>

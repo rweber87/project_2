@@ -76,12 +76,12 @@
      </div>
    </div>
 
-<% if @submission.comments.blank? %>
+<% if @submission.comments.blank? && current_user %>
     <div class="row">
       <div class="col s12">
         <div class="card blue-grey darken-1">
           <div class="card-content white-text">
-            <span class="card-title center">Hey <i><%= current_user.name %></i>, there aren't any comments yet.</span>
+            <span class="card-title center">Hey <i><%= current_user.name%></i>, there aren't any comments yet.</span>
             <h5 class="center">Why don't you write one?</h5>
           </div>
         </div>

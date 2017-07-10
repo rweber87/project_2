@@ -16,27 +16,8 @@
            </li>
           <li><%= link_to "Sign out", signout_path, method: :delete, :class => 'btn waves-effect waves-light' %></li>
         </ul>
-     <% else %>
-      <ul>
-        <div>
-          <li class="right"><%= button_to "Log in", login_path, :class => 'btn waves-effect waves-light right', :style => 'margin-top:40px;margin-right:25px;' %></li>
-          <li><%= link_to "Sign up!", signup_path, :class => 'btn waves-effect waves-light right' %></li>
-        </div>
-        <% end %>
-
-         <li><i class="material-icons" style="margin-right:-20px;">note_add</i></li>
-      <li id="submission_form">
-           <form accept-charset="UTF-8" method="post" action="/submissions">
-             <span class="input-field"><input placeholder="Paste URL Here" type="text" name="submission[url]" id="submission_url"></span>
-             <input name="authenticity_token" type="hidden" value="<%= form_authenticity_token %>">
-           </form>
-      </li>
-      <li><i class="material-icons" style="margin-right:-10px;">perm_identity</i></li>
-      <li class="">
-        <%= link_to "Account (#{current_user.username})", current_user %></li>
-      </li>
-
-      </ul>
+     
+      
      <% else %>
      <ul class="right hide-on-med-and-down">
           <li><%= button_to "Log in", login_path, :class => 'btn waves-effect waves-light', :style => 'margin-top:40px;margin-right:25px;' %></li>
